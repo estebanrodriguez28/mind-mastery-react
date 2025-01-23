@@ -1,8 +1,29 @@
-# React + Vite
+# Mind Mastery
+A mental health app designed to change negative thoughts
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+This is a react project where users can change negative thoughts into positive ones using AI or themself. It is a CRUD app but has a practice feature that reinforces good thoughts while making bad thoughts weaker.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Features:
+- User authentication (signup/login) using JWT
+- Create new thoughts (which contain a bad thought turned into a positive one)
+- Manage those thoughts (edit or delete them) 
+- Practice feature that reinforces the new positive thought
+
+### Features Added:
+- User authentication (signup/login) using JWT
+- Create thought screens
+- Backend routes for retrieving users and thoughts 
+
+### Features Needed:
+- Save thoughts to database for users to retrieve and display
+- OpenAI chat api for assistance in creating positive thoughts
+
+## Demo
+
+![Landing Page](./Landing.png)
+![Login Page](./Login.png)
+![Home Page](./Home.png)
+![Negative Thought Page](./Negative.png)
+![Change Page](./Change.png)
