@@ -1,0 +1,745 @@
+body,
+html {
+  margin: 0;
+  font-family: "Chewy", serif;
+  font-weight: 400;
+  font-style: normal;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(0deg, rgb(200, 13, 160) 0%, rgba(232, 147, 14, 1) 38%, rgba(0, 212, 255, 1) 100%);
+  color: #333;
+  text-align: center;
+
+}
+
+
+
+
+.title {
+  font-size: 6rem;
+  margin: 5px;
+
+}
+
+.title_margin {
+  font-size: 4rem;
+  margin-bottom: 5px;
+  margin-top: 150px;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #555;
+  margin-top: 0px;
+  margin-bottom: 80px;
+
+}
+
+.subtitle2 {
+  font-size: 1.5rem;
+  color: #555;
+  margin-top: 0px;
+  margin-bottom: 40px;
+
+}
+
+.cloud-button {
+  font-family: "Chewy", serif;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+  display: inline-block;
+  padding: 20px 40px;
+  background-color: #fff;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 50px;
+  /* Makes it pill-shaped */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Adds depth */
+  border: 2px solid #ccc;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+}
+
+
+
+.svg-cloud-button {
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.cloud-svg {
+  fill: #fff;
+  /* White cloud background */
+  stroke: #ccc;
+  /* Gray border for the cloud */
+  stroke-width: 3;
+  width: 200px;
+  /* Adjust cloud size */
+  height: 100px;
+
+  /* Move cloud up by 10px */
+  transition: filter 0.3s ease;
+  transform: translate(-50px, -40px);
+
+  /* Smooth hover effect */
+}
+
+.svg-cloud-button span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-100%, -190%);
+  /* Perfectly center the text */
+  font-family: "Chewy", serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  pointer-events: none;
+  /* Ensure text doesn't block button clicks */
+}
+
+.svg-cloud-button:hover .cloud-svg {
+  fill: #e0e0e0;
+  /* Light gray hover effect */
+
+  /* Move cloud up slightly on hover */
+}
+
+.monk_logo {
+  height: 100%;
+  width: 40%;
+
+  object-fit: contain;
+  margin-right: -100px;
+
+}
+
+.parent {
+  display: flex;
+
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  width: 100vw;
+
+}
+
+.parent2 {
+  display: flex;
+
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  width: 100vw;
+  height: 100vh;
+
+}
+
+.first_thought {
+  display: flex;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  /* Stack children vertically */
+  justify-content: center;
+  /* Align to the top */
+  align-items: flex-start;
+  /* Center horizontally (optional) */
+
+  /* Full viewport height */
+  width: 100vw;
+
+  padding: 0;
+  /* Remove internal spacing */
+  margin: 0;
+  /* Remove external spacing */
+
+
+
+}
+
+.login {
+  display: flex;
+
+
+  margin: 0 auto;
+  margin-bottom: 40px;
+  justify-content: center;
+
+
+}
+
+.login_div {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 500px;
+  /* Fixed width */
+  height: 250px;
+  border-radius: 25px;
+  padding: 20px;
+  background: linear-gradient(0deg, rgb(200, 13, 160) 0%, rgba(232, 147, 14, 1) 38%, rgba(0, 212, 255, 1) 100%);
+
+
+
+
+}
+
+.sub_sec {
+  font-size: 4rem;
+  margin-bottom: 0px;
+  margin-top: -50px;
+}
+
+.top_landing {
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  display: flex;
+
+
+}
+
+.top_landing2 {
+  justify-content: center;
+  align-items: flex-end;
+
+  display: flex;
+
+
+}
+
+.top_landing3 {
+  justify-content: center;
+  align-items: flex-end;
+
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+
+.home_welcome {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: right;
+  align-items: flex-start;
+  text-align: left;
+  align-self: flex-end;
+
+}
+
+.top-element {
+  margin-top: 20px;
+  /* Optional padding for spacing */
+  display: flex;
+  /* Background color for clarity */
+  width: 100%;
+  /* Stretch the content across the container */
+  text-align: center;
+  /* Center text horizontally (optional) */
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.thoughts_list {
+  display: flex;
+  /* Background color for clarity */
+  width: 100%;
+  /* Stretch the content across the container */
+  text-align: center;
+  /* Center text horizontally (optional) */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.thought_effects {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+
+}
+
+.bad_thought {
+  display: flex;
+  justify-content: space-evenly;
+
+  margin: 0 auto;
+  margin-bottom: 40px;
+  flex-direction: column;
+}
+
+.all_thoughts {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+
+  margin: 0 auto;
+
+  flex-direction: row;
+
+}
+
+
+
+.card {
+  position: relative;
+  width: 350px;
+  /* Fixed width 
+  
+    
+
+  */
+  height: 350px;
+  /* Fixed height */
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><path d="M150 40C100 20 50 60 60 110C20 120 30 170 70 180C40 200 50 260 120 240C90 270 150 290 190 260C230 290 280 240 260 200C290 190 270 140 240 140C290 120 280 70 220 80C230 50 190 30 150 40Z" fill="%23d2d2e4"/></svg>') no-repeat center center;
+  background-size: 120%;
+  /* Ensures the cloud fully fills the container */
+  text-align: center;
+  padding: 10px;
+
+  /* Subtle shadow for depth */
+  color: #333;
+  /* Text color */
+  font-family: "Chewy", serif;
+  display: flex;
+  /* Flexbox for content alignment */
+  flex-direction: column;
+  /* Stack content vertically */
+  justify-content: center;
+  /* Center content vertically */
+  align-items: center;
+  /* Center content horizontally */
+  border-radius: 0;
+  /* No extra radius, SVG handles the shape */
+
+}
+
+
+
+
+.card h3 {
+  margin-bottom: 0px;
+  /* Reduce space below the heading */
+  margin-top: -20px;
+  font-size: 2.5rem;
+
+
+}
+
+.card p {
+  margin-top: 0;
+  /* Remove space above the paragraph */
+  margin-bottom: 60px;
+  /* Reduce space below the paragraph */
+  font-size: 21px;
+}
+
+.card img {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  /* Reduce space above the image */
+}
+
+
+.cloud-card {
+  position: relative;
+  width: 800px;
+  /* Fixed width 
+  
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><path d="M150 40C100 20 50 60 60 110C20 120 30 170 70 180C40 200 50 260 120 240C90 270 150 290 190 260C230 290 280 240 260 200C290 190 270 140 240 140C290 120 280 70 220 80C230 50 190 30 150 40Z" fill="%23d2d2e4"/></svg>') no-repeat center center;
+
+  */
+  height: 500px;
+  /* Fixed height */
+  background-image: url('assets/cloud.png');
+  background-size: contain;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  /* Ensures the cloud fully fills the container */
+  text-align: center;
+  padding: 10px;
+
+  /* Subtle shadow for depth */
+  color: #333;
+  /* Text color */
+  font-family: "Chewy", serif;
+  display: flex;
+  /* Flexbox for content alignment */
+  flex-direction: column;
+  /* Stack content vertically */
+  justify-content: center;
+  /* Center content vertically */
+  align-items: center;
+  /* Center content horizontally */
+  border-radius: 0;
+  /* No extra radius, SVG handles the shape */
+
+}
+
+
+
+
+.cloud-card h3 {
+  margin-bottom: 0px;
+  /* Reduce space below the heading */
+  margin-top: -20px;
+  font-size: 2.5rem;
+
+
+}
+
+.cloud-card p {
+  margin-bottom: 30px;
+  margin-top: 0px;
+  /* Reduce space below the paragraph */
+  font-size: 21px;
+}
+
+.cloud-card img {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  /* Reduce space above the image */
+}
+
+
+
+.thought-card {
+  position: relative;
+  width: 800px;
+  /* Fixed width 
+  
+    
+
+  */
+  height: 400px;
+  /* Fixed height */
+  background-image: url('assets/cloud.png');
+  background-size: contain;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  /* Ensures the cloud fully fills the container */
+  text-align: center;
+  padding: 10px;
+
+  /* Subtle shadow for depth */
+  color: #333;
+  /* Text color */
+  font-family: "Chewy", serif;
+  display: flex;
+  /* Flexbox for content alignment */
+  flex-direction: column;
+  /* Stack content vertically */
+  justify-content: center;
+  /* Center content vertically */
+  align-items: center;
+  /* Center content horizontally */
+  border-radius: 0;
+  /* No extra radius, SVG handles the shape */
+  margin: 0px;
+
+
+}
+
+
+
+
+.thought-card h3 {
+  margin-bottom: 0px;
+  /* Reduce space below the heading */
+  margin-top: -10px;
+  font-size: 2.5rem;
+
+
+}
+
+.thought-card p {
+  margin-top: 0;
+  /* Remove space above the paragraph */
+  margin-bottom: 20px;
+  /* Reduce space below the paragraph */
+  font-size: 21px;
+}
+
+.thought-card img {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  /* Reduce space above the image */
+}
+
+.thought-card textarea {
+
+  /* Set the height for multiple lines */
+  padding: 10px;
+  /* Add padding inside the textarea for spacing */
+  font-size: 16px;
+  /* Make the text larger and more readable */
+  border: 1px solid #ccc;
+  /* Add a border */
+  border-radius: 5px;
+  /* Round the corners */
+  resize: none;
+  /* Allow resizing only vertically */
+  box-sizing: border-box;
+  /* Ensure padding doesn't affect the overall size */
+  width: 400px;
+  /* Full width */
+  height: 50px;
+  /* Larger height */
+  margin-bottom: 50px;
+  /* Minimum height */
+  font-family: "Chewy", serif;
+}
+
+
+.arrow {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-left: -100px;
+  margin-right: -100px;
+}
+
+.arrow_img {
+  width: 200px;
+  /* Icon size */
+  height: auto;
+  margin: 0px;
+
+}
+
+
+
+.card-icon {
+  width: 120px;
+  /* Icon size */
+  height: auto;
+  margin: 0px;
+
+  /* Space below the image */
+}
+
+.main_landing {
+  text-align: left;
+  align-items: flex-end;
+  justify-content: center;
+  padding-top: 150px;
+
+}
+
+.main_p {
+  font-size: 25px;
+  margin: 5px;
+}
+
+.main_p2 {
+  font-size: 25px;
+  margin: 5px 5px 50px 5px;
+}
+
+.monk_login {
+  cursor: pointer;
+  height: 15%;
+  width: 15%;
+  margin-top: 60px;
+  object-fit: contain;
+  transition: filter 0.3s ease;
+
+
+}
+
+.monk_home {
+  cursor: pointer;
+  height: 15%;
+  width: 15%;
+  margin-top: 60px;
+  object-fit: contain;
+  transition: filter 0.3s ease;
+
+
+}
+
+.monk_login:hover {
+  filter: brightness(0.8);
+
+}
+
+
+.monk_thought {
+  cursor: pointer;
+  height: 55%;
+  width: 55%;
+  margin-top: 20px;
+  margin-bottom: 70px;
+  object-fit: contain;
+  transition: filter 0.3s ease;
+
+
+}
+
+.monk_thought:hover {
+  filter: brightness(0.8);
+
+}
+
+
+input {
+  width: 100%;
+  /* Make input take up full width of the parent */
+  padding: 10px;
+  /* Add padding for better appearance */
+  margin-bottom: 15px;
+  /* Add space between inputs */
+  box-sizing: border-box;
+  /* Include padding in the width */
+  border: 1px solid #ccc;
+  /* Optional: Add a subtle border */
+  border-radius: 10px;
+  /* Optional: Add rounded corners */
+  font-size: 16px;
+  /* Optional: Adjust font size */
+  font-family: "Chewy", serif;
+}
+
+.form {
+  width: 100%;
+}
+
+.signup-btn {
+  background-color: white;
+  /* White background */
+  color: #333;
+  /* Text color */
+  border: 2px solid #ccc;
+  /* Subtle border */
+  border-radius: 20px;
+  /* Rounded corners */
+  padding: 10px 20px;
+  /* Space inside the button */
+  font-size: 16px;
+  /* Font size */
+  font-weight: bold;
+  /* Bold text */
+  cursor: pointer;
+  /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  /* Smooth hover effect */
+  width: 100%;
+  margin-top: 15px;
+  font-family: "Chewy", serif;
+
+}
+
+
+
+.signup-btn:hover {
+  background-color: #f0f0f0;
+  /* Slightly darker on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Add shadow on hover */
+}
+
+.signup-btn:active {
+  background-color: #e0e0e0;
+  /* Even darker when clicked */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  /* Pressed effect */
+}
+
+
+
+.thought-btn {
+  background-color: white;
+  /* White background */
+  color: #333;
+  /* Text color */
+  border: 2px solid #ccc;
+  /* Subtle border */
+  border-radius: 20px;
+  /* Rounded corners */
+  padding: 10px 20px;
+  /* Space inside the button */
+  font-size: 16px;
+  /* Font size */
+  font-weight: bold;
+  /* Bold text */
+  cursor: pointer;
+  /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  /* Smooth hover effect */
+
+  margin-top: 15px;
+  font-family: "Chewy", serif;
+
+}
+
+.thought-btn:hover {
+  background-color: #f0f0f0;
+  /* Slightly darker on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Add shadow on hover */
+}
+
+.thought-btn:active {
+  background-color: #e0e0e0;
+  /* Even darker when clicked */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  /* Pressed effect */
+}
+
+.link {
+  background: none;
+  border: none;
+  font-family: "Chewy", serif;
+  font-size: 20px;
+  margin-bottom: 40px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.signup {
+  display: flex;
+  justify-content: center;
+}
+
+textarea {
+
+  /* Set the height for multiple lines */
+  padding: 10px;
+  /* Add padding inside the textarea for spacing */
+  font-size: 16px;
+  /* Make the text larger and more readable */
+  border: 1px solid #ccc;
+  /* Add a border */
+  border-radius: 5px;
+  /* Round the corners */
+  resize: none;
+  /* Allow resizing only vertically */
+  box-sizing: border-box;
+  /* Ensure padding doesn't affect the overall size */
+  width: 400px;
+  /* Full width */
+  height: 100px;
+  /* Larger height */
+  margin-bottom: 50px;
+  /* Minimum height */
+  font-family: "Chewy", serif;
+}
