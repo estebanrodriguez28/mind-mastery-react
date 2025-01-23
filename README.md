@@ -22,8 +22,17 @@ This is a react project where users can change negative thoughts into positive o
 
 ## Demo
 
+### Landing Page
 ![Landing Page](./Landing.png)
+
+### Login Page
 ![Login Page](./Login.png)
+
+### Home Page
 ![Home Page](./Home.png)
+
+### Creating Negative Thought Page
 ![Negative Thought Page](./Negative.png)
+
+### Changing Negative Thought Into Positive
 ![Change Page](./Change.png)
