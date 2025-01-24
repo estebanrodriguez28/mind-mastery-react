@@ -24,6 +24,8 @@ This is a react project where users can change negative thoughts into positive o
 
 ### Landing Page
 ![Landing Page](./Landing.png)
+![Landing Page](./Landing2.png)
+![Landing Page](./Landing3.png)
 
 ### Login Page
 ![Login Page](./Login.png)
