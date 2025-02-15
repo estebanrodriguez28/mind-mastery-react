@@ -190,12 +190,13 @@ function Practice() {
             <div className='parent5'>
 
 
-                <img src={monk} className='monk_normal3' onClick={() => editPage(thoughtId)}></img>
+
 
 
                 {
                     showSuccess ? (
                         <>
+                            <img src={monk} className='monk_normal3'></img>
                             <Confetti numberOfPieces={200} />
                             <h1 className="sub_sec">Congratulations!</h1>
                             <p className="subtitle">You turned your negative thought positive!</p>
@@ -219,6 +220,7 @@ function Practice() {
                     ) : (
 
                         <>
+                            <img src={monk} className='monk_normal3' onClick={() => editPage(thoughtId)}></img>
                             <h1 className="sub_sec">Practice Your Positive Thought</h1>
                             <p className="subtitle">Say the positive thought 5 times, in your head or outloud, then click the button!</p>
 
