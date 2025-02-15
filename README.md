@@ -5,11 +5,15 @@ A mindfulness-based web app that helps users transform negative thoughts into po
 
 
 ## 🌟 Screenshots
-### 🖼️ Home Page
-![Home Page](screenshots/homepage.png)
+### 🖼️ Landing Page
+![Landing Page](LandingNew.png)
+
+### Home Page
+
+![Home Page](HomePage.png)
 
 ### 🎯 Thought Transformation
-![Thought Transformation](screenshots/thought-exercise.png)
+![Thought Transformation](ChangeThought.png)
 
 
 ## 🚀 Tech Stack
