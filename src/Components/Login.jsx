@@ -54,7 +54,7 @@ function Login() {
                 </div>
 
                 <div>
-                    <h1 className='sub_sec'>Continue Mastering Your Mind</h1>
+                    <h1 className='sub_sec2'>Continue Mastering Your Mind</h1>
 
                     <p className='subtitle2'>Through Practice</p>
                 </div>

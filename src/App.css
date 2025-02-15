@@ -34,11 +34,44 @@ html {
 
 }
 
+.subtitlea {
+  font-size: 1.5rem;
+  color: #555;
+  margin-top: 0px;
+  margin-bottom: 25px;
+
+}
+
 .subtitle2 {
   font-size: 1.5rem;
   color: #555;
   margin-top: 0px;
   margin-bottom: 40px;
+
+}
+
+
+.subtitle3 {
+  font-size: 1.5rem;
+  color: #555;
+  margin-top: 0px;
+  margin-bottom: 20px;
+
+}
+
+.subtitle4 {
+  font-size: 2rem;
+  color: #555;
+  margin: 5px;
+  margin-bottom: 80px;
+
+}
+
+.subtitle5 {
+  font-size: 1.5rem;
+  color: #555;
+  margin: 5px;
+  margin-bottom: 70px;
 
 }
 
@@ -113,11 +146,13 @@ html {
 }
 
 .monk_logo {
-  height: 100%;
+  height: 40%;
   width: 40%;
 
   object-fit: contain;
-  margin-right: -100px;
+  margin: 10px;
+  margin-right: -45px;
+  margin-top: 40px;
 
 }
 
@@ -135,10 +170,45 @@ html {
   display: flex;
 
   flex-direction: column;
+
+
+  width: 100vw;
+  height: 100vh;
+
+}
+
+.parent3 {
+  display: flex;
+
+  flex-direction: column;
   flex-wrap: wrap;
 
   width: 100vw;
   height: 100vh;
+
+}
+
+.parent4 {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+
+}
+
+.parent5 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  min-height: 100vh;
 
 }
 
@@ -156,7 +226,6 @@ html {
   /* Center horizontally (optional) */
 
   /* Full viewport height */
-  width: 100vw;
 
   padding: 0;
   /* Remove internal spacing */
@@ -196,20 +265,52 @@ html {
 
 }
 
+.sub_seca {
+  font-size: 4rem;
+  margin-bottom: 0px;
+  margin-top: 50px;
+}
+
+.sub_seca2 {
+  font-size: 4rem;
+  margin-bottom: 0px;
+  margin-top: 150px;
+}
+
 .sub_sec {
   font-size: 4rem;
   margin-bottom: 0px;
   margin-top: -50px;
 }
 
+.sub_sec2 {
+  font-size: 5rem;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.sub_sec3 {
+  font-size: 5rem;
+  margin-bottom: 0px;
+  margin-top: 80px;
+}
+
+.sub_thought {
+  font-size: 4rem;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
 .top_landing {
   justify-content: center;
   align-items: center;
-  min-height: 80vh;
+
   display: flex;
 
 
 }
+
+
 
 .top_landing2 {
   justify-content: center;
@@ -231,6 +332,15 @@ html {
 }
 
 
+.top_landing4 {
+  justify-content: center;
+
+  display: flex;
+
+
+
+}
+
 .home_welcome {
   display: flex;
 
@@ -247,7 +357,7 @@ html {
   /* Optional padding for spacing */
   display: flex;
   /* Background color for clarity */
-  width: 100%;
+  width: 100vw;
   /* Stretch the content across the container */
   text-align: center;
   /* Center text horizontally (optional) */
@@ -258,19 +368,20 @@ html {
 .thoughts_list {
   display: flex;
   /* Background color for clarity */
-  width: 100%;
-  /* Stretch the content across the container */
-  text-align: center;
-  /* Center text horizontally (optional) */
+
+
   justify-content: center;
+
   align-items: center;
   flex-direction: column;
+
+
 }
 
 .thought_effects {
   display: flex;
   justify-content: space-evenly;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 40px;
 
@@ -300,16 +411,16 @@ html {
 
 .card {
   position: relative;
-  width: 350px;
+  width: 300px;
   /* Fixed width 
   
     
 
   */
-  height: 350px;
+  height: 250px;
   /* Fixed height */
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><path d="M150 40C100 20 50 60 60 110C20 120 30 170 70 180C40 200 50 260 120 240C90 270 150 290 190 260C230 290 280 240 260 200C290 190 270 140 240 140C290 120 280 70 220 80C230 50 190 30 150 40Z" fill="%23d2d2e4"/></svg>') no-repeat center center;
-  background-size: 120%;
+  background-color: white;
+
   /* Ensures the cloud fully fills the container */
   text-align: center;
   padding: 10px;
@@ -328,8 +439,16 @@ html {
   /* Center content horizontally */
   border-radius: 0;
   /* No extra radius, SVG handles the shape */
+  margin: 20px;
+  /* 🌟 Rounded corners */
+  border-radius: 20px;
+
+  /* 🌟 Soft shadow for depth */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 
 }
+
+
 
 
 
@@ -357,6 +476,11 @@ html {
   /* Reduce space above the image */
 }
 
+
+.card:hover {
+  filter: brightness(0.8);
+  transform: translateY(-5px);
+}
 
 .cloud-card {
   position: relative;
@@ -490,7 +614,7 @@ html {
   /* Set the height for multiple lines */
   padding: 10px;
   /* Add padding inside the textarea for spacing */
-  font-size: 16px;
+  font-size: 32px;
   /* Make the text larger and more readable */
   border: 1px solid #ccc;
   /* Add a border */
@@ -502,7 +626,111 @@ html {
   /* Ensure padding doesn't affect the overall size */
   width: 400px;
   /* Full width */
-  height: 50px;
+  height: 70px;
+  /* Larger height */
+  margin-bottom: 50px;
+  /* Minimum height */
+  font-family: "Chewy", serif;
+}
+
+
+
+.thought-card2 {
+
+  position: relative;
+  width: 600px;
+  /* Fixed width */
+  height: 400px;
+  /* Fixed height */
+  background-color: white;
+  /* Clean background */
+  text-align: center;
+  padding: 20px;
+  /* More padding for spacing */
+
+  /* Elegant shadow for depth */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+  /* Soft shadow effect */
+
+  color: #333;
+  /* Text color */
+  font-family: "Chewy", serif;
+  /* Fun font */
+
+  display: flex;
+  /* Flexbox for content alignment */
+  flex-direction: column;
+  /* Stack content vertically */
+  justify-content: center;
+  /* Center content vertically */
+  align-items: center;
+  /* Center content horizontally */
+
+  border-radius: 20px;
+  /* Rounded corners for a smooth look */
+  margin: 30px auto;
+  /* Center horizontally */
+
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  /* Smooth hover effect */
+}
+
+/* 🔥 Hover Effect */
+.thought-card2:hover {
+  transform: translateY(-5px);
+  /* Slight lift */
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
+  /* Deeper shadow on hover */
+}
+
+
+
+
+
+.thought-card2 h3 {
+  margin-bottom: 5px;
+  /* Reduce space below the heading */
+  margin-top: -15px;
+  font-size: 2.5rem;
+
+
+}
+
+.thought-card2 p {
+  margin-top: 0;
+  /* Remove space above the paragraph */
+  margin-bottom: 20px;
+  /* Reduce space below the paragraph */
+  font-size: 21px;
+}
+
+.thought-card2 img {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  width: 130px;
+  /* Icon size */
+  height: auto;
+  /* Reduce space above the image */
+}
+
+.thought-card2 textarea {
+
+  /* Set the height for multiple lines */
+  padding: 10px;
+  /* Add padding inside the textarea for spacing */
+  font-size: 32px;
+  /* Make the text larger and more readable */
+  border: 1px solid #ccc;
+  /* Add a border */
+  border-radius: 5px;
+  /* Round the corners */
+  resize: none;
+  /* Allow resizing only vertically */
+  box-sizing: border-box;
+  /* Ensure padding doesn't affect the overall size */
+  width: 500px;
+  /* Full width */
+  height: 200px;
   /* Larger height */
   margin-bottom: 50px;
   /* Minimum height */
@@ -526,7 +754,79 @@ html {
 
 }
 
+.arrow_img2 {
+  width: 200px;
+  /* Icon size */
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 
+}
+
+.arrow_img3 {
+  width: 200px;
+  /* Icon size */
+  height: auto;
+  margin-top: 120px;
+  margin-bottom: 20px;
+
+}
+
+.custom-button {
+  width: 50px;
+  /* Adjust as needed */
+  height: 50px;
+  /* Adjust as needed */
+  background-color: white;
+  /* Purple gradient background */
+  background-image: url('assets/ai.png');
+  /* Path to your stars image */
+  background-size: contain;
+  /* Adjust the size of the stars */
+  background-repeat: no-repeat;
+  /* Prevent tiling */
+  background-position: center;
+  /* Center the image */
+  border: none;
+  /* Remove border */
+  border-radius: 10px;
+  /* Rounded corners */
+  box-shadow: 0 8px 16px rgba(110, 87, 255, 0.5);
+  /* Add a glow effect */
+  cursor: pointer;
+  /* Pointer cursor on hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Smooth hover effects */
+}
+
+.custom-button:hover {
+  transform: scale(1.1);
+  /* Slightly enlarge on hover */
+  box-shadow: 0 12px 24px rgba(110, 87, 255, 0.7);
+  /* Enhance glow on hover */
+}
+
+
+.convert {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: -20px;
+  margin-right: -20px;
+
+}
+
+.convert2 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-top: 120px;
+
+}
 
 .card-icon {
   width: 120px;
@@ -537,11 +837,32 @@ html {
   /* Space below the image */
 }
 
+.card-icon2 {
+  width: 120px;
+  /* Icon size */
+  height: auto;
+  margin: 0px;
+  margin-top: -50px;
+  /* Space below the image */
+}
+
+.card-icon3 {
+  width: 120px;
+  /* Icon size */
+  height: auto;
+
+  margin-top: 0px;
+  /* Space below the image */
+  object-fit: cover;
+}
+
+
 .main_landing {
   text-align: left;
-  align-items: flex-end;
-  justify-content: center;
-  padding-top: 150px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top: 200px;
+  padding-right: 40px;
 
 }
 
@@ -552,7 +873,7 @@ html {
 
 .main_p2 {
   font-size: 25px;
-  margin: 5px 5px 50px 5px;
+  margin: 5px;
 }
 
 .monk_login {
@@ -582,6 +903,188 @@ html {
 
 }
 
+.thought_bubble {
+  width: 350px;
+  /* Fixed width 
+  
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><path d="M150 40C100 20 50 60 60 110C20 120 30 170 70 180C40 200 50 260 120 240C90 270 150 290 190 260C230 290 280 240 260 200C290 190 270 140 240 140C290 120 280 70 220 80C230 50 190 30 150 40Z" fill="%23d2d2e4"/></svg>') no-repeat center center;
+
+  */
+  height: 300px;
+  /* Fixed height */
+  background-image: url('assets/cloud.png');
+  background-size: contain;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  transition: filter 0.3s ease;
+  margin: 0px;
+
+
+
+
+}
+
+.thought_bubble:hover {
+  filter: brightness(0.8);
+
+}
+
+
+.thought_bubble2 {
+  width: 550px;
+
+  height: 250px;
+  /* Fixed height */
+  background-color: white;
+  background-size: contain;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  transition: filter 0.3s ease;
+  margin: 55px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+
+
+
+}
+
+.thought_bubble2:hover {
+  filter: brightness(0.8);
+  transform: translateY(-5px);
+
+}
+
+.thought_bubble3 {
+  width: 550px;
+  height: 250px;
+  background-color: rgb(255, 218, 98);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  transition: filter 0.3s ease, box-shadow 0.5s ease-in-out;
+  margin: 55px;
+
+
+  /* 🔥 Warm Golden Glow */
+  box-shadow: 0px 0px 20px 5px rgba(255, 215, 0, 0.6),
+    0px 0px 40px 10px rgba(255, 223, 0, 0.5),
+    0px 0px 60px 15px rgba(255, 223, 0, 0.4);
+  border-radius: 50px;
+  /* Makes glow softer */
+}
+
+.thought_bubble3:hover {
+  filter: brightness(0.8);
+
+}
+
+
+@keyframes cloud-glow {
+  0% {
+    box-shadow: 0px 0px 20px 5px rgba(255, 215, 0, 0.6),
+      0px 0px 40px 10px rgba(255, 223, 0, 0.5),
+      0px 0px 60px 15px rgba(255, 223, 0, 0.4);
+  }
+
+  50% {
+    box-shadow: 0px 0px 30px 10px rgba(255, 215, 0, 0.8),
+      0px 0px 50px 15px rgba(255, 223, 0, 0.6),
+      0px 0px 70px 20px rgba(255, 223, 0, 0.5);
+  }
+
+  100% {
+    box-shadow: 0px 0px 20px 5px rgba(255, 215, 0, 0.6),
+      0px 0px 40px 10px rgba(255, 223, 0, 0.5),
+      0px 0px 60px 15px rgba(255, 223, 0, 0.4);
+  }
+}
+
+.thought_bubble3 {
+  animation: cloud-glow 4s infinite ease-in-out;
+}
+
+
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.trash-icon {
+  color: red;
+  /* Default color */
+  width: 48px;
+  /* Default size */
+  height: 48px;
+  transition: all 0.2s ease;
+  margin: 20px;
+  margin-top: 60px;
+}
+
+/* Make it darker and larger on hover */
+.delete-btn:hover .trash-icon {
+  color: darkred;
+  /* Darker red on hover */
+  transform: scale(1.2);
+  /* Enlarges */
+}
+
+.dumbell-icon {
+  color: #4A90E2;
+  /* Default color */
+  width: 48px;
+  /* Default size */
+  height: 48px;
+  transition: all 0.2s ease;
+  margin: 35px;
+}
+
+/* Make it darker and larger on hover */
+.delete-btn:hover .dumbell-icon {
+  color: #255791;
+  /* Darker red on hover */
+  transform: scale(1.2);
+  /* Enlarges */
+}
+
+
+.dumbell-icon2 {
+  color: #4A90E2;
+  /* Default color */
+  width: 48px;
+  /* Default size */
+  height: 48px;
+  transition: all 0.2s ease;
+  margin: 5px;
+}
+
+/* Make it darker and larger on hover */
+.delete-btn:hover .dumbell-icon2 {
+  color: #255791;
+  /* Darker red on hover */
+  transform: scale(1.2);
+  /* Enlarges */
+}
 
 .monk_thought {
   cursor: pointer;
@@ -596,6 +1099,65 @@ html {
 }
 
 .monk_thought:hover {
+  filter: brightness(0.8);
+
+}
+
+.monk_normal {
+
+  cursor: pointer;
+  height: 30%;
+  width: 30%;
+  margin-top: 250px;
+  margin-bottom: 50px;
+  object-fit: contain;
+  transition: filter 0.3s ease;
+
+
+
+}
+
+.monk_normal:hover {
+  filter: brightness(0.8);
+
+}
+
+
+.monk_normal2 {
+
+  cursor: pointer;
+  height: 30%;
+  width: 30%;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  object-fit: contain;
+  transition: filter 0.3s ease;
+
+
+
+}
+
+.monk_normal2:hover {
+  filter: brightness(0.8);
+
+}
+
+.monk_normal3 {
+
+  cursor: pointer;
+  height: 15%;
+  width: 15%;
+  /* this might have been 0px */
+  margin-top: 70px;
+  margin-bottom: 50px;
+  object-fit: contain;
+  transition: filter 0.3s ease;
+
+
+
+}
+
+.monk_normal3:hover {
   filter: brightness(0.8);
 
 }
@@ -686,8 +1248,9 @@ input {
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   /* Smooth hover effect */
 
-  margin-top: 15px;
+  margin-top: 20px;
   font-family: "Chewy", serif;
+
 
 }
 
@@ -704,6 +1267,9 @@ input {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   /* Pressed effect */
 }
+
+
+
 
 .link {
   background: none;
@@ -725,7 +1291,7 @@ textarea {
   /* Set the height for multiple lines */
   padding: 10px;
   /* Add padding inside the textarea for spacing */
-  font-size: 16px;
+  font-size: 32px;
   /* Make the text larger and more readable */
   border: 1px solid #ccc;
   /* Add a border */
@@ -742,4 +1308,756 @@ textarea {
   margin-bottom: 50px;
   /* Minimum height */
   font-family: "Chewy", serif;
+  text-align: center;
+}
+
+
+.text_title {
+
+  /* Set the height for multiple lines */
+  padding: 10px;
+  /* Add padding inside the textarea for spacing */
+  font-size: 36px;
+  /* Make the text larger and more readable */
+  border: 1px solid #ccc;
+  /* Add a border */
+  border-radius: 5px;
+  /* Round the corners */
+  resize: none;
+  /* Allow resizing only vertically */
+  box-sizing: border-box;
+  /* Ensure padding doesn't affect the overall size */
+  width: 300px;
+  /* Full width */
+  height: 70px;
+  /* Larger height */
+  margin-bottom: 5px;
+  /* Minimum height */
+  margin-top: 0px;
+  font-family: "Chewy", serif;
+  text-align: center;
+}
+
+.title-label {
+  display: block;
+  /* Forces the label onto its own line */
+  font-weight: bold;
+  /* Optional: Makes it stand out */
+  margin-bottom: 5px;
+  /* Adds spacing below the label */
+  text-align: center;
+  /* Ensures the text is aligned left */
+  font-family: "Chewy", serif;
+  font-size: 3rem;
+
+}
+
+/* Tooltip Base Styling */
+.custom-tooltip {
+  background-color: black !important;
+  color: white !important;
+  border-radius: 5px;
+  padding: 6px 10px;
+  font-size: 14px;
+  text-align: center;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Tooltip Fade-in Animation */
+.custom-tooltip[data-show="true"] {
+  opacity: 1 !important;
+  transform: translateY(0);
+}
+
+.custom-tooltip {
+  opacity: 0;
+  transform: translateY(-5px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+
+/* 🟡 Base Sun Image */
+.sun-image {
+  width: 100px;
+  /* Adjust size as needed */
+  height: auto;
+  transition: filter 0.5s ease-in-out;
+}
+
+/* ✨ Glowing Effect */
+.sun-glow {
+  animation: glow-animation 3s ease-in-out;
+}
+
+/* 🌟 Glow Animation (Fades in and out) */
+@keyframes glow-animation {
+  0% {
+    filter: drop-shadow(0 0 5px rgba(255, 255, 0, 0.6)) drop-shadow(0 0 10px rgba(255, 255, 0, 0.4));
+    /* Soft glow */
+  }
+
+  50% {
+    filter: drop-shadow(0 0 15px rgba(255, 255, 0, 1)) drop-shadow(0 0 30px rgba(255, 255, 0, 0.8));
+    /* Strong glow */
+  }
+
+  100% {
+    filter: drop-shadow(0 0 5px rgba(255, 255, 0, 0)) drop-shadow(0 0 10px rgba(255, 255, 0, 0));
+    /* Fade out */
+  }
+}
+
+
+.sun-glow2 {
+  filter: drop-shadow(0 0 15px rgba(255, 223, 0, 0.9)) drop-shadow(0 0 30px rgba(255, 223, 0, 0.7));
+}
+
+
+
+
+/* 🌧️ Base Cloud Styling */
+.rain-cloud {
+  width: 100px;
+  /* Adjust size */
+  height: auto;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+/* ☁️ Floating Up & Fading Out Animation */
+.disappear-animation {
+  animation: float-away 3s ease-in-out forwards;
+}
+
+/* 🌬️ Keyframe Animation for Letting Go Effect */
+@keyframes float-away {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: translateY(-50px) scale(0.9);
+    /* Floating up */
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-100px) scale(0.8);
+    /* Completely disappears */
+  }
+}
+
+
+
+
+.nthought-card {
+  opacity: 0.5;
+  position: relative;
+  width: 600px;
+  /* Fixed width */
+  height: 600px;
+  /* Fixed height */
+  background-color: white;
+  /* Clean background */
+  text-align: center;
+  padding: 20px;
+  /* More padding for spacing */
+
+  /* Elegant shadow for depth */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+  /* Soft shadow effect */
+
+  color: #333;
+  /* Text color */
+  font-family: "Chewy", serif;
+  /* Fun font */
+
+  display: flex;
+  /* Flexbox for content alignment */
+  flex-direction: column;
+  /* Stack content vertically */
+  justify-content: center;
+  /* Center content vertically */
+  align-items: center;
+  /* Center content horizontally */
+  overflow: hidden;
+
+  border-radius: 20px;
+  /* Rounded corners for a smooth look */
+  margin: 30px auto;
+  /* Center horizontally */
+
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  /* Smooth hover effect */
+}
+
+/* 🔥 Hover Effect */
+.nthought-card:hover {
+  transform: translateY(-5px);
+  /* Slight lift */
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
+  /* Deeper shadow on hover */
+}
+
+
+
+
+
+.nthought-card h3 {
+  margin-bottom: 5px;
+  /* Reduce space below the heading */
+  margin-top: -15px;
+  font-size: 2.5rem;
+
+
+}
+
+.nthought-card p {
+  margin-top: 0;
+  /* Remove space above the paragraph */
+  margin-bottom: 20px;
+  /* Reduce space below the paragraph */
+  font-size: 21px;
+}
+
+.nthought-card img {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  width: 130px;
+  /* Icon size */
+  height: auto;
+  /* Reduce space above the image */
+}
+
+.nthought-card textarea {
+
+  /* Set the height for multiple lines */
+  padding: 10px;
+  /* Add padding inside the textarea for spacing */
+  font-size: 32px;
+  /* Make the text larger and more readable */
+  border: 1px solid #ccc;
+  /* Add a border */
+  border-radius: 5px;
+  /* Round the corners */
+  resize: none;
+  /* Allow resizing only vertically */
+  box-sizing: border-box;
+  /* Ensure padding doesn't affect the overall size */
+  width: 500px;
+  /* Full width */
+  height: 300px;
+  /* Larger height */
+  margin-bottom: 50px;
+  /* Minimum height */
+  font-family: "Chewy", serif;
+}
+
+
+
+
+
+.pthought-card {
+  opacity: 0.5;
+  position: relative;
+  width: 600px;
+  /* Fixed width */
+  height: 600px;
+  /* Fixed height */
+  background-color: white;
+  /* Clean background */
+  text-align: center;
+  padding: 20px;
+  /* More padding for spacing */
+
+  /* Elegant shadow for depth */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+  /* Soft shadow effect */
+
+  color: #333;
+  /* Text color */
+  font-family: "Chewy", serif;
+  /* Fun font */
+
+  display: flex;
+  /* Flexbox for content alignment */
+  flex-direction: column;
+  /* Stack content vertically */
+  justify-content: center;
+  /* Center content vertically */
+  align-items: center;
+  /* Center content horizontally */
+
+  border-radius: 20px;
+  /* Rounded corners for a smooth look */
+  margin: 30px auto;
+  /* Center horizontally */
+
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  /* Smooth hover effect */
+}
+
+/* 🔥 Hover Effect */
+.pthought-card:hover {
+  transform: translateY(-5px);
+  /* Slight lift */
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
+  /* Deeper shadow on hover */
+}
+
+
+
+
+
+.pthought-card h3 {
+  margin-bottom: 5px;
+  /* Reduce space below the heading */
+  margin-top: -15px;
+  font-size: 2.5rem;
+
+
+}
+
+.pthought-card p {
+  margin-top: 0;
+  /* Remove space above the paragraph */
+  margin-bottom: 20px;
+  /* Reduce space below the paragraph */
+  font-size: 21px;
+}
+
+.pthought-card img {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  width: 130px;
+  /* Icon size */
+  height: auto;
+  /* Reduce space above the image */
+}
+
+.pthought-card textarea {
+
+  /* Set the height for multiple lines */
+  padding: 10px;
+  /* Add padding inside the textarea for spacing */
+  font-size: 32px;
+  /* Make the text larger and more readable */
+  border: 1px solid #ccc;
+  /* Add a border */
+  border-radius: 5px;
+  /* Round the corners */
+  resize: none;
+  /* Allow resizing only vertically */
+  box-sizing: border-box;
+  /* Ensure padding doesn't affect the overall size */
+  width: 500px;
+  /* Full width */
+  height: 300px;
+  /* Larger height */
+  margin-bottom: 50px;
+  /* Minimum height */
+  font-family: "Chewy", serif;
+}
+
+
+
+/* ✅ Square Button with Rounded Corners */
+.square-check-button {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  /* Soft rounded corners */
+  background-color: #4CAF50;
+  /* Lighter green like ✅ emoji */
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin: 20px;
+}
+
+/* 🟩 Transparent Checkmark (Blends into Background) */
+.square-check-icon {
+  stroke: white;
+  /* Makes the checkmark invisible */
+  stroke-width: 4;
+  fill: none;
+  /* Ensures it's transparent inside */
+}
+
+/* ✨ Hover & Click Effects */
+.square-check-button:hover {
+  background-color: #43a047;
+  /* Slightly darker green on hover */
+}
+
+.square-check-button:active {
+  transform: scale(0.9);
+  /* Press-down effect */
+}
+
+
+
+
+
+
+.practice-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* 🎉 Fun Bounce Effect */
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+
+  30% {
+    transform: scale(1.2);
+  }
+
+  /* Scale up */
+  50% {
+    transform: scale(1);
+  }
+
+  70% {
+    transform: scale(1.1);
+  }
+
+  /* Slight bounce */
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+
+  25% {
+    transform: rotate(-10deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  75% {
+    transform: rotate(-5deg);
+  }
+}
+
+/* 💪 Apply Bounce & Shake Animation */
+.bounce-effect {
+  animation: bounce 0.5s ease, shake 0.4s ease-in-out;
+}
+
+
+.waterfall-bg {
+  position: absolute;
+  left: 0;
+  /* Stick to the left side */
+  top: 0;
+  width: 450px;
+  /* ✅ Set a specific width */
+  height: 45vh;
+  /* ✅ Make sure it fills the height */
+
+
+  /* Keep it from taking too much space */
+  z-index: 0;
+  /* Behind everything else */
+  object-fit: cover;
+  opacity: 0.8;
+  /* Slight transparency */
+  margin-left: 60px;
+  margin-top: 200px;
+
+}
+
+.wave {
+  position: absolute;
+  left: 0;
+  /* Stick to the left side */
+  top: 0;
+  width: 450px;
+  /* ✅ Set a specific width */
+  height: 30vh;
+  /* ✅ Make sure it fills the height */
+
+
+  /* Keep it from taking too much space */
+  z-index: 0;
+  /* Behind everything else */
+  object-fit: cover;
+  opacity: 0.8;
+  /* Slight transparency */
+  margin-left: 60px;
+  margin-top: 200px;
+
+}
+
+.zen {
+  position: absolute;
+  left: 0;
+  /* Stick to the left side */
+  top: 0;
+  width: 550px;
+  /* ✅ Set a specific width */
+  height: 35vh;
+  /* ✅ Make sure it fills the height */
+
+
+  /* Keep it from taking too much space */
+  z-index: 0;
+  /* Behind everything else */
+  object-fit: cover;
+  opacity: 0.8;
+  /* Slight transparency */
+  margin-left: 60px;
+  margin-top: 200px;
+
+}
+
+
+.zen2 {
+  position: absolute;
+  right: 0;
+  /* Stick to the left side */
+  top: 0;
+  width: 450px;
+  /* ✅ Set a specific width */
+  height: 30vh;
+  /* ✅ Make sure it fills the height */
+
+
+  /* Keep it from taking too much space */
+  z-index: 0;
+  /* Behind everything else */
+  object-fit: cover;
+  opacity: 0.8;
+  /* Slight transparency */
+  margin-right: 20px;
+  margin-top: 300px;
+
+}
+
+.page-content {
+  position: relative;
+  /* Make sure it's layered above */
+  z-index: 1;
+  padding: 20px;
+}
+
+.temple {
+  position: absolute;
+  right: 0;
+  /* Stick to the left side */
+  top: 0;
+  height: 50vh;
+  /* Full screen height */
+
+  width: 350px;
+  /* Keep it from taking too much space */
+  z-index: 0;
+  /* Behind everything else */
+  object-fit: cover;
+  margin-right: 40px;
+  margin-top: 150px;
+
+
+
+  /* Slight transparency */
+
+}
+
+
+.beach {
+  position: absolute;
+  right: 0;
+  /* Stick to the left side */
+  top: 0;
+  height: 40vh;
+  /* Full screen height */
+
+  width: 350px;
+  /* Keep it from taking too much space */
+  z-index: 0;
+  /* Behind everything else */
+  object-fit: cover;
+  margin-right: 25px;
+  margin-top: 150px;
+
+
+
+  /* Slight transparency */
+
+}
+
+
+.slide-in {
+  opacity: 0;
+  transform: translateX(-50px);
+  /* Start slightly off-screen */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* 🌟 Final State: Visible and In Position */
+.show {
+  opacity: 1;
+  transform: translateX(0);
+  /* Moves into place */
+}
+
+
+
+
+.square-check-button2 {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  /* Soft rounded corners */
+  background-color: #4CAF50;
+  /* Lighter green like ✅ emoji */
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 40px;
+
+}
+
+
+
+/* ✨ Hover & Click Effects */
+.square-check-button2:hover {
+  background-color: #43a047;
+  /* Slightly darker green on hover */
+}
+
+.square-check-button2:active {
+  transform: scale(0.9);
+  /* Press-down effect */
+}
+
+
+
+.pthought-card2 {
+  opacity: 0.5;
+  position: relative;
+  width: 600px;
+  height: 600px;
+  background-color: rgb(255, 218, 98);
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 30px auto;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+  /* 🔥 Golden Glow */
+  box-shadow: 0px 0px 20px 5px rgba(255, 215, 0, 0.6),
+    0px 0px 40px 10px rgba(255, 223, 0, 0.5),
+    0px 0px 60px 15px rgba(255, 223, 0, 0.4);
+}
+
+/* 🔥 Hover Effect */
+.pthought-card2:hover {
+  transform: translateY(-5px);
+  /* Slight lift */
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
+  /* Deeper shadow on hover */
+}
+
+
+
+
+
+.pthought-card2 h3 {
+  margin-bottom: 5px;
+  /* Reduce space below the heading */
+  margin-top: -15px;
+  font-size: 2.5rem;
+
+
+}
+
+.pthought-card2 p {
+  margin-top: 0;
+  /* Remove space above the paragraph */
+  margin-bottom: 20px;
+  /* Reduce space below the paragraph */
+  font-size: 21px;
+}
+
+.pthought-card2 img {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  width: 130px;
+  /* Icon size */
+  height: auto;
+  /* Reduce space above the image */
+}
+
+.pthought-card2 textarea {
+
+  /* Set the height for multiple lines */
+  padding: 10px;
+  /* Add padding inside the textarea for spacing */
+  font-size: 32px;
+  /* Make the text larger and more readable */
+  border: 1px solid #ccc;
+  /* Add a border */
+  border-radius: 5px;
+  /* Round the corners */
+  resize: none;
+  /* Allow resizing only vertically */
+  box-sizing: border-box;
+  /* Ensure padding doesn't affect the overall size */
+  width: 500px;
+  /* Full width */
+  height: 300px;
+  /* Larger height */
+  margin-bottom: 50px;
+  /* Minimum height */
+  font-family: "Chewy", serif;
+}
+
+
+@keyframes card-glow {
+  0% {
+    box-shadow: 0px 0px 20px 5px rgba(255, 215, 0, 0.6),
+      0px 0px 40px 10px rgba(255, 223, 0, 0.5),
+      0px 0px 60px 15px rgba(255, 223, 0, 0.4);
+  }
+
+  50% {
+    box-shadow: 0px 0px 30px 10px rgba(255, 215, 0, 0.8),
+      0px 0px 50px 15px rgba(255, 223, 0, 0.6),
+      0px 0px 70px 20px rgba(255, 223, 0, 0.5);
+  }
+
+  100% {
+    box-shadow: 0px 0px 20px 5px rgba(255, 215, 0, 0.6),
+      0px 0px 40px 10px rgba(255, 223, 0, 0.5),
+      0px 0px 60px 15px rgba(255, 223, 0, 0.4);
+  }
+}
+
+.pthought-card2 {
+  animation: card-glow 4s infinite ease-in-out;
+  /* 🔥 Slow pulsing glow */
 }

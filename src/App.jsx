@@ -7,6 +7,8 @@ import Landing from "./Components/Landing";
 import Signup from "./Components/Signup"
 import Thought from "./Components/Thought"
 import Change from "./Components/Change"
+import Edit from "./Components/Edit"
+import Practice from "./Components/Practice";
 
 function App() {
     return (
@@ -19,6 +21,8 @@ function App() {
                 <Route path="/home" element={<Home />} />
                 <Route path="/thought" element={<Thought />} />
                 <Route path="/change" element={<Change />} />
+                <Route path="/edit" element={<Edit />} />
+                <Route path="/practice" element={<Practice />} />
             </Routes>
         </Router>
     );

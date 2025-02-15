@@ -1,73 +1,245 @@
 import { useState } from 'react'
 import { useNavigate } from "react-router-dom";
+import { Tooltip } from "react-tooltip";
+import { Sparkles } from "lucide-react";
+import { Check } from "lucide-react";
+import axios from 'axios';
 import monk from '../assets/monk_2.png'
 import rain from '../assets/rain.png'
 import arrow from '../assets/arrow.png'
 import sun from '../assets/sun.png'
 import '../App.css'
 
+
+
 function Change() {
 
-    const negative_thought = sessionStorage.getItem('negative_thought');
 
-    const [positive_thought, set_pthought] = useState('');
+
+    const [p_thought, set_pthought] = useState('');
+    const [title, set_title] = useState('');
+    const [n_thought, set_nthought] = useState('');
+
     const navigate = useNavigate();
 
-    const thoughtPage = () => {
-        navigate("/thought")
+    const homePage = () => {
+        navigate("/home")
     }
 
-    const handleKeyDown = (event) => {
+    const handleKeyDown = async (event) => {
         if (event.key === 'Enter') {
-            event.preventDefault(); // Prevents adding a new line in the textarea
-            navigate('/change'); // Replace with your target route
+
+            try {
+
+                event.preventDefault(); // Prevents adding a new line in the textarea
+                if (p_thought.length == 0) {
+                    alert("Field is required!");
+                    return;
+                }
+
+                const token = localStorage.getItem('token'); // Retrieve token stored after login
+                if (!token) {
+                    console.error('No token found');
+                    return;
+                }
+
+
+                await axios.post("http://localhost:5001/api/thoughts", {
+
+
+                    title,
+                    p_thought,
+                    n_thought
+
+                },
+
+                    {
+                        headers: {
+                            Authorization: `Bearer ${token}`,
+                        },
+
+                    }
+
+
+                );
+
+                navigate('/home'); // Replace with your target route
+
+            }
+
+            catch (error) {
+                console.error('Error:', error.response?.data?.error || 'Unknown error');
+            }
+
         }
+    };
+
+
+
+
+    const createThought = async () => {
+
+
+        try {
+
+
+            if (p_thought.length == 0 || title.length == 0 || n_thought.length == 0) {
+                alert("Field is required!");
+                return;
+            }
+
+            const token = localStorage.getItem('token'); // Retrieve token stored after login
+            if (!token) {
+                console.error('No token found');
+                return;
+            }
+
+
+            await axios.post("http://localhost:5001/api/thoughts", {
+
+
+                title,
+                p_thought,
+                n_thought
+
+            },
+
+                {
+                    headers: {
+                        Authorization: `Bearer ${token}`,
+                    },
+
+                }
+
+
+            );
+
+            navigate('/home'); // Replace with your target route
+
+        }
+
+        catch (error) {
+            console.error('Error:', error.response?.data?.error || 'Unknown error');
+        }
+
+
+    };
+
+
+
+
+    const useGpt = async (inputText) => {
+        try {
+            if (inputText.length > 0) {
+                const response = await axios.post('http://localhost:5001/api/ai', { inputText });
+                set_pthought(response.data.ai_thought);
+            }
+
+        } catch (error) {
+            console.error('Error fetching analysis:', error.response?.data || error.message);
+        }
+
     };
 
     return (
         <>
-            <div className='parent2'>
-                <div className='top_landing2'>
+            <div className='parent5'>
 
-                    <img src={monk} className='monk_thought' onClick={thoughtPage}></img>
 
-                </div>
-                <h1 className="sub_sec">Turn The Negative Thought Positive</h1>
-                <p className="subtitle">Either Yourself or With AI Feature!</p>
+                <img src={monk} className='monk_normal3' onClick={homePage}></img>
+
+
+                <h1 className="sub_sec">Create Your Thought</h1>
+                <p className="subtitle4">Click the green checkmark to create the thought!</p>
+
+
+                <form>
+                    <label className='title-label'>Thought Title:</label>
+                    <textarea className='text_title'
+                        maxLength="35"
+                        placeholder='(e.g. Doubt)'
+                        value={title}
+                        onChange={(e) => set_title(e.target.value)}
+                        required
+                    />
+                </form>
                 <div className='all_thoughts'>
 
-                    <div className='thought-card'>
-                        <img src={rain} className='card-icon'></img>
+
+
+
+
+                    <div className='nthought-card' style={{ opacity: 1 }}>
+                        <img
+                            src={rain}
+                            className='card-icon3'
+                        ></img>
+
                         <h3> Negative Thought </h3>
-                        <p> The Thought You Put: </p>
+                        <p> Enter A Negative Thought Holding You Back: </p>
 
 
-                        <textarea readOnly>
-                            {negative_thought}
-                        </textarea>
-
-
-                    </div>
-
-                    <div className='arrow'>
-
-                        <img src={arrow} className='arrow_img'></img>
-                    </div>
-
-                    <div className='thought-card'>
-                        <img src={sun} className='card-icon'></img>
-                        <h3> Positive Thought </h3>
-                        <p> New Positive Version Of Thought </p>
 
                         <form>
                             <textarea
-                                maxLength="500"
-                                placeholder="I can't do it"
-                                onKeyDown={handleKeyDown}
-                                value={negative_thought}
+                                maxLength="200"
+                                value={n_thought}
                                 onChange={(e) => set_nthought(e.target.value)}
-                                required>
-                            </textarea>
+                                required
+                            />
+
+
+                        </form>
+
+
+                    </div>
+
+
+                    <div className='convert'>
+
+                        <img src={arrow} className='arrow_img3'></img>
+                        <button
+                            className='custom-button'
+                            onClick={() => useGpt(n_thought)}
+                            data-tooltip-id="ai-tooltip"
+                        >
+
+
+
+                        </button>
+                        <Tooltip
+                            id="ai-tooltip"
+                            className="custom-tooltip"
+                            place="bottom"
+                            content="Use AI to change your negative thought!"
+                        />
+
+                        <button
+                            className="square-check-button2"
+                            onClick={createThought}
+                            data-tooltip-id="check-tooltip"
+                        >
+                            <Check size={40} className="square-check-icon" />
+                        </button>
+                    </div>
+
+
+
+                    <div className='pthought-card' style={{ opacity: 1 }}>
+                        <img src={sun} className='card-icon3'></img>
+                        <h3> Positive Thought </h3>
+                        <p> Enter A Positive Version Of Negative Thought: </p>
+
+                        <form>
+                            <textarea
+                                maxLength="200"
+
+                                value={p_thought}
+                                onChange={(e) => set_pthought(e.target.value)}
+                                required
+                            />
+
+
                         </form>
 
                     </div>
@@ -81,6 +253,6 @@ function Change() {
             </div>
         </>
     )
-}
 
+}
 export default Change

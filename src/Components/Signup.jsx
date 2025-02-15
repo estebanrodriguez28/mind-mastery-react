@@ -11,6 +11,7 @@ function Signup() {
 
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const [error, setError] = useState("");
     const navigate = useNavigate();
 
     const handleSignup = async (e) => {
@@ -18,6 +19,15 @@ function Signup() {
 
         try {
             // Send signup request to backend
+            if (username.length < 3) {
+                setError("Username must be at least 3 characters.");
+                return;
+            }
+            if (password.length < 8) {
+                setError("Password must be at least 8 characters.");
+                return;
+            }
+
             const response = await axios.post('http://localhost:5001/api/signup', { username, password });
 
             const token = response.data.token;
@@ -52,7 +62,7 @@ function Signup() {
                 </div>
 
                 <div>
-                    <h1 className='sub_sec'>Live The Life You Want</h1>
+                    <h1 className='sub_sec2'>Live The Life You Want</h1>
 
                     <p className='subtitle2'>Control Your Thoughts</p>
                 </div>
@@ -70,6 +80,7 @@ function Signup() {
                             placeholder="Username"
                             value={username}
                             onChange={(e) => setUsername(e.target.value)}
+                            minLength={3}
                             required>
 
                         </input>
@@ -84,10 +95,12 @@ function Signup() {
                             placeholder="Password"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
+                            minLength={8}
                             required>
 
                         </input>
                     </form>
+                    {error && <p style={{ color: "red" }}>{error}</p>}
                     <button className="signup-btn" onClick={handleSignup}>
                         Sign Up
                     </button>
