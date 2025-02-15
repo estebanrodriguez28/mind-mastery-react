@@ -1,24 +1,20 @@
-# Mind Mastery
-A mental health app designed to change negative thoughts
-
-## Description
-This is a react project where users can change negative thoughts into positive ones using AI or themself. It is a CRUD app but has a practice feature that reinforces good thoughts while making bad thoughts weaker.
+# Mindestry (Mind + Mastery)
+This is a react project where users can change negative thoughts into positive ones using AI or themself. It is a CRUD app with a practice feature that reinforces good thoughts while making bad thoughts weaker, through animations to make confronting our thoughts holding us back a bit easier. Also leveraging OpenAIs api to assist people in changing their negative thoughts into positive ones.
 
 
 ### Features:
 - User authentication (signup/login) using JWT
 - Create new thoughts (which contain a bad thought turned into a positive one)
 - Manage those thoughts (edit or delete them) 
-- Practice feature that reinforces the new positive thought
+- Practice feature that reinforces the new positive thought (animations for better user experience)
+- AI features (with OpeanAI api) to assist in creating positive thoughts
 
-### Features Added:
-- User authentication (signup/login) using JWT
-- Create thought screens
-- Backend routes for retrieving users and thoughts 
-
-### Features Needed:
-- Save thoughts to database for users to retrieve and display
-- OpenAI chat api for assistance in creating positive thoughts
+### Tech Stack:
+- ReactJS
+- JavaScript/HTML/CSS
+- MongoDB
+- NodeJS (Express JS framework)
+- Openai API
 
 ## Demo
 
