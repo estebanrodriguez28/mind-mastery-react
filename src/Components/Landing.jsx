@@ -8,8 +8,7 @@ import sun from '../assets/sun.png'
 import rain from '../assets/rain.png'
 import arrow from '../assets/arrow.png'
 import waterfall from '../assets/waterfall.png'
-import cherry_blossom from '../assets/pink_tree.png'
-import temple from '../assets/temple.png'
+
 import monk_temple from '../assets/monk_temple.png'
 
 import '../App.css'

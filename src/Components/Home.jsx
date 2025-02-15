@@ -2,10 +2,6 @@ import { useState, useEffect } from 'react'
 import { Link, useNavigate } from "react-router-dom";
 import monk from '../assets/monk_2.png'
 import axios from 'axios';
-import beach from '../assets/beach.png'
-import island from '../assets/tropical.png'
-import garden from '../assets/garden.png'
-import wave from '../assets/wave.png'
 import zen from '../assets/zen.png'
 import hot_spring from '../assets/hot_spring.png'
 
@@ -25,7 +21,7 @@ function Home() {
           console.error('No token found');
           return;
         }
-        const response = await axios.get(`${process.env.BACKEND_URL}/api/home`, {
+        const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/home`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -52,7 +48,7 @@ function Home() {
     const fetchThoughts = async () => {
       try {
         const token = localStorage.getItem('token'); // Retrieve JWT
-        const response = await axios.get(`${process.env.BACKEND_URL}/api/thoughts`, {
+        const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/thoughts`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         setThoughts(response.data.thoughts);

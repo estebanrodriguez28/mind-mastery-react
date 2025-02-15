@@ -5,7 +5,7 @@ import Home from './Components/Home';
 import Login from './Components/Login';
 import Landing from "./Components/Landing";
 import Signup from "./Components/Signup"
-import Thought from "./Components/Thought"
+
 import Change from "./Components/Change"
 import Edit from "./Components/Edit"
 import Practice from "./Components/Practice";

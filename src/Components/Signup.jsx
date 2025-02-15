@@ -28,7 +28,7 @@ function Signup() {
                 return;
             }
 
-            const response = await axios.post(`${process.env.BACKEND_URL}/api/signup`, { username, password });
+            const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/signup`, { username, password });
 
             const token = response.data.token;
 

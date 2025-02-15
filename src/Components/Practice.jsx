@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { useNavigate, useLocation } from "react-router-dom";
 import { Check } from "lucide-react";
-import { Trash2 } from 'lucide-react';
+
 import { Tooltip } from "react-tooltip";
 import { Dumbbell } from 'lucide-react';
 import Confetti from "react-confetti";
@@ -30,7 +30,7 @@ function Practice() {
         const fetchThought = async () => {
             try {
 
-                const response = await axios.get(`${process.env.BACKEND_URL}/api/thought`, {
+                const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/thought`, {
                     params: {
                         thoughtId: thoughtId
                     }
@@ -60,7 +60,7 @@ function Practice() {
 
 
                 try {
-                    await axios.put(`${process.env.BACKEND_URL}/positive`, {
+                    await axios.put(`${import.meta.env.VITE_BACKEND_URL}/positive`, {
                         thoughtId: thoughtId,
                         isPositive: true // ✅ Updating boolean field
                     });
@@ -109,7 +109,7 @@ function Practice() {
                 }
 
 
-                await axios.put(`${process.env.BACKEND_URL}/update/thought`, {
+                await axios.put(`${import.meta.env.VITE_BACKEND_URL}/update/thought`, {
 
                     thoughtId,
                     title,
@@ -138,7 +138,7 @@ function Practice() {
 
     const updateThought = async () => {
         try {
-            await axios.put(`${process.env.BACKEND_URL}/opacity`, {
+            await axios.put(`${import.meta.env.VITE_BACKEND_URL}/opacity`, {
                 thoughtId: thoughtId,
                 n_opacity: n_opacity,
                 p_opacity: p_opacity

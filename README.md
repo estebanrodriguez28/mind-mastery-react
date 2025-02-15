@@ -22,6 +22,7 @@ A mindfulness-based web app that helps users transform negative thoughts into po
 - **Database**: MongoDB Atlas
 - **Hosting**: Render
 - **Auth**: JWT Authentication
+- **Build**: Vite
 
 ## ✨ Features
 ✅ Convert negative thoughts into positive ones  

@@ -17,8 +17,8 @@ function Login() {
 
         try {
             // Send sign-in request to backend
-
-            const response = await axios.post(`${process.env.BACKEND_URL}/api/signin`, { username, password });
+            console.log(import.meta.env.VITE_BACKEND_URL)
+            const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/signin`, { username, password });
 
             // Navigate to the user's dashboard
 
