@@ -55,20 +55,20 @@ function Signup() {
 
     return (
         <>
-            <div className='parent'>
-                <div className='top_landing2'>
-                    <img src={monk} className='monk_login' onClick={homePage}></img>
+            <div className='parent6'>
 
-                </div>
+                <img src={monk} className='monk_login' onClick={homePage}></img>
+
+
 
                 <div>
                     <h1 className='sub_sec2'>Live The Life You Want</h1>
 
                     <p className='subtitle2'>Control Your Thoughts</p>
                 </div>
-            </div>
 
-            <div className='login'>
+
+
                 <div className='login_div'>
                     <label>
                         <span>
@@ -107,18 +107,18 @@ function Signup() {
 
                 </div>
 
-            </div>
-
-            <div className='signup'>
 
 
-
-                <p className='subtitle2'> Already Have An Account? </p>
-                <button className='link' onClick={loginPage}>Sign In</button>
+                <div className='signup'>
 
 
-            </div>
 
+                    <p className='subtitle2'> Already Have An Account? </p>
+                    <button className='link' onClick={loginPage}>Sign In</button>
+
+
+                </div>
+            </div >
 
         </>
     )
