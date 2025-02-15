@@ -185,6 +185,7 @@ function Change() {
                                 maxLength="200"
                                 value={n_thought}
                                 onChange={(e) => set_nthought(e.target.value)}
+                                placeholder="I can't do it :("
                                 required
                             />
 
@@ -233,7 +234,7 @@ function Change() {
                         <form>
                             <textarea
                                 maxLength="200"
-
+                                placeholder="I can do it !"
                                 value={p_thought}
                                 onChange={(e) => set_pthought(e.target.value)}
                                 required
