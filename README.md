@@ -1,4 +1,4 @@
-# 🧠 Mindestry – Control Your Thoughts, Control Your Life
+# 🧠 Mindastry – Control Your Thoughts, Control Your Life
 A mindfulness-based web app that helps users transform negative thoughts into positive ones through guided exercises and self-reflection.
 
 # Try it out here: https://mindestry.onrender.com/
