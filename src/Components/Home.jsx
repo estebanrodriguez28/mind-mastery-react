@@ -25,7 +25,7 @@ function Home() {
           console.error('No token found');
           return;
         }
-        const response = await axios.get('http://localhost:5001/api/home', {
+        const response = await axios.get(`${process.env.BACKEND_URL}/api/home`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -52,7 +52,7 @@ function Home() {
     const fetchThoughts = async () => {
       try {
         const token = localStorage.getItem('token'); // Retrieve JWT
-        const response = await axios.get('http://localhost:5001/api/thoughts', {
+        const response = await axios.get(`${process.env.BACKEND_URL}/api/thoughts`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         setThoughts(response.data.thoughts);

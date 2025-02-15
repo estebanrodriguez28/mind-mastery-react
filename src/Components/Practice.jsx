@@ -30,7 +30,7 @@ function Practice() {
         const fetchThought = async () => {
             try {
 
-                const response = await axios.get('http://localhost:5001/api/thought', {
+                const response = await axios.get(`${process.env.BACKEND_URL}/api/thought`, {
                     params: {
                         thoughtId: thoughtId
                     }
@@ -60,7 +60,7 @@ function Practice() {
 
 
                 try {
-                    await axios.put(`http://localhost:5001/positive`, {
+                    await axios.put(`${process.env.BACKEND_URL}/positive`, {
                         thoughtId: thoughtId,
                         isPositive: true // ✅ Updating boolean field
                     });
@@ -109,7 +109,7 @@ function Practice() {
                 }
 
 
-                await axios.put("http://localhost:5001/update/thought", {
+                await axios.put(`${process.env.BACKEND_URL}/update/thought`, {
 
                     thoughtId,
                     title,
@@ -138,7 +138,7 @@ function Practice() {
 
     const updateThought = async () => {
         try {
-            await axios.put(`http://localhost:5001/opacity`, {
+            await axios.put(`${process.env.BACKEND_URL}/opacity`, {
                 thoughtId: thoughtId,
                 n_opacity: n_opacity,
                 p_opacity: p_opacity

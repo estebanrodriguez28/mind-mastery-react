@@ -4,13 +4,14 @@ import { Tooltip } from "react-tooltip";
 import { Sparkles } from "lucide-react";
 import { Check } from "lucide-react";
 import axios from 'axios';
+import dotenv from 'dotenv';
 import monk from '../assets/monk_2.png'
 import rain from '../assets/rain.png'
 import arrow from '../assets/arrow.png'
 import sun from '../assets/sun.png'
 import '../App.css'
 
-
+dotenv.config();
 
 function Change() {
 
@@ -44,7 +45,7 @@ function Change() {
                 }
 
 
-                await axios.post("http://localhost:5001/api/thoughts", {
+                await axios.post(`${process.env.BACKEND_URL}/api/thoughts`, {
 
 
                     title,
@@ -95,7 +96,7 @@ function Change() {
             }
 
 
-            await axios.post("http://localhost:5001/api/thoughts", {
+            await axios.post(`${process.env.BACKEND_URL}/api/thoughts`, {
 
 
                 title,
@@ -131,7 +132,7 @@ function Change() {
     const useGpt = async (inputText) => {
         try {
             if (inputText.length > 0) {
-                const response = await axios.post('http://localhost:5001/api/ai', { inputText });
+                const response = await axios.post(`${process.env.BACKEND_URL}/api/ai`, { inputText });
                 set_pthought(response.data.ai_thought);
             }
 

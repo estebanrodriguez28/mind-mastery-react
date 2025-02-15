@@ -29,7 +29,7 @@ function Edit() {
         const fetchThought = async () => {
             try {
 
-                const response = await axios.get('http://localhost:5001/api/thought', {
+                const response = await axios.get(`${process.env.BACKEND_URL}/api/thought`, {
                     params: {
                         thoughtId: thoughtId
                     }
@@ -74,7 +74,7 @@ function Edit() {
                 }
 
 
-                await axios.put("http://localhost:5001/update/thought", {
+                await axios.put(`${process.env.BACKEND_URL}/update/thought`, {
 
                     thoughtId,
                     title,
@@ -109,7 +109,7 @@ function Edit() {
             }
 
 
-            await axios.put("http://localhost:5001/update/thought", {
+            await axios.put(`${process.env.BACKEND_UR}/update/thought`, {
 
                 thoughtId,
                 title,
@@ -137,7 +137,7 @@ function Edit() {
 
     const deleteThought = async () => {
         try {
-            await axios.delete(`http://localhost:5001/delete/${thoughtId}`);
+            await axios.delete(`${process.env.BACKEND_URL}/delete/${thoughtId}`);
             navigate('/home');
         } catch (error) {
             console.error("Failed to delete:", error.response.data);
@@ -150,7 +150,7 @@ function Edit() {
 
     const useGpt = async (inputText) => {
         try {
-            const response = await axios.post('http://localhost:5001/api/ai', { inputText });
+            const response = await axios.post(`${process.env.BACKEND_URL}/api/ai`, { inputText });
             set_pthought(response.data.ai_thought);
         } catch (error) {
             console.error('Error fetching analysis:', error.response?.data || error.message);
