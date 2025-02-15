@@ -8,7 +8,7 @@ A mindfulness-based web app that helps users transform negative thoughts into po
 ### 🖼️ Landing Page
 ![Landing Page](LandingNew.png)
 
-### Home Page
+### 🏠 Home Page
 
 ![Home Page](HomePage.png)
 
