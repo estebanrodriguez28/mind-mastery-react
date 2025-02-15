@@ -2,6 +2,8 @@
 This is a react project where users can change negative thoughts into positive ones using AI or themself. It is a CRUD app with a practice feature that reinforces good thoughts while making bad thoughts weaker, through animations to make confronting our thoughts holding us back a bit easier. Also leveraging OpenAIs api to assist people in changing their negative thoughts into positive ones.
 
 
+https://mindestry.onrender.com/
+
 ### Features:
 - User authentication (signup/login) using JWT
 - Create new thoughts (which contain a bad thought turned into a positive one)
