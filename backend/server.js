@@ -18,6 +18,7 @@ app.use(json());
 app.use(router);
 app.use(router2);
 // Connect to MongoDB
+console.log("MongoDB URI:", process.env.ATLAS_URI);
 connect(process.env.ATLAS_URI)
     .then(() => console.log('MongoDB connected'))
     .catch((err) => console.log(err));
