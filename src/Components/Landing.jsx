@@ -46,7 +46,7 @@ function Landing() {
 
 
                         <div className='main_landing'>
-                            <h1 className='title'>Mindastry</h1>
+                            <h1 className='title'>Mindestry</h1>
                             <p className='main_p'> Control Your Thoughts Control Your Life</p>
                             <p className='main_p'> Turn Negative Thoughts Into Positive Ones</p>
                             <p className='main_p2'> Live The Life You Want</p>
