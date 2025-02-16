@@ -109,7 +109,7 @@ function Edit() {
             }
 
 
-            await axios.put(`${process.env.BACKEND_UR}/update/thought`, {
+            await axios.put(`${import.meta.env.VITE_BACKEND_URL}/update/thought`, {
 
                 thoughtId,
                 title,
