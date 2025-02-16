@@ -1782,10 +1782,13 @@ textarea {
   left: 0;
   /* Stick to the left side */
   top: 0;
-  width: 450px;
-  /* ✅ Set a specific width */
-  height: 45vh;
-  /* ✅ Make sure it fills the height */
+  width: 30vw;
+  /* ✅ Use viewport width instead of fixed pixels */
+  max-width: 500px;
+  /* ✅ Ensures it doesn’t get too large */
+  height: auto;
+  /* ✅ Keeps aspect ratio */
+  max-height: 50vh;
 
 
   /* Keep it from taking too much space */
@@ -1794,8 +1797,8 @@ textarea {
   object-fit: cover;
   opacity: 0.8;
   /* Slight transparency */
-  margin-left: 60px;
-  margin-top: 200px;
+  margin-left: 3.5%;
+  margin-top: 8%;
 
 }
 
@@ -1826,10 +1829,13 @@ textarea {
   left: 0;
   /* Stick to the left side */
   top: 0;
-  width: 550px;
-  /* ✅ Set a specific width */
-  height: 35vh;
-  /* ✅ Make sure it fills the height */
+  width: 40vw;
+  /* ✅ Use viewport width instead of fixed pixels */
+  max-width: 500px;
+  /* ✅ Ensures it doesn’t get too large */
+  height: auto;
+  /* ✅ Keeps aspect ratio */
+  max-height: 40vh;
 
 
   /* Keep it from taking too much space */
@@ -1838,8 +1844,8 @@ textarea {
   object-fit: cover;
   opacity: 0.8;
   /* Slight transparency */
-  margin-left: 60px;
-  margin-top: 200px;
+  margin-left: 5%;
+  margin-top: 12%;
 
 }
 
@@ -1849,20 +1855,26 @@ textarea {
   right: 0;
   /* Stick to the left side */
   top: 0;
-  width: 400px;
-  /* ✅ Set a specific width */
-  height: 40vh;
-  /* ✅ Make sure it fills the height */
 
+  /* ✅ Set a specific width width: 40vh; */
 
+  /* ✅ Make sure it fills the height height: 35vh; */
+
+  width: 30vw;
+  /* ✅ Use viewport width instead of fixed pixels */
+  max-width: 400px;
+  /* ✅ Ensures it doesn’t get too large */
+  height: auto;
+  /* ✅ Keeps aspect ratio */
+  max-height: 40vh;
   /* Keep it from taking too much space */
   z-index: 0;
   /* Behind everything else */
   object-fit: cover;
   opacity: 0.8;
   /* Slight transparency */
-  margin-right: 30px;
-  margin-top: 270px;
+  margin-right: 3.5%;
+  margin-top: 16%;
 
 }
 
@@ -1878,16 +1890,19 @@ textarea {
   right: 0;
   /* Stick to the left side */
   top: 0;
-  height: 50vh;
-  /* Full screen height */
-
-  width: 350px;
+  width: 35vw;
+  /* ✅ Use viewport width instead of fixed pixels */
+  max-width: 500px;
+  /* ✅ Ensures it doesn’t get too large */
+  height: auto;
+  /* ✅ Keeps aspect ratio */
+  max-height: 40vh;
   /* Keep it from taking too much space */
   z-index: 0;
   /* Behind everything else */
   object-fit: cover;
-  margin-right: 40px;
-  margin-top: 150px;
+  margin-right: 2.5%;
+  margin-top: 10%;
 
 
 
