@@ -48,7 +48,7 @@ function Landing() {
                             <h1 className='title'>Mindestry</h1>
                             <p className='main_p'> Control Your Thoughts Control Your Life</p>
                             <p className='main_p'> Turn Negative Thoughts Into Positive Ones</p>
-                            <p className='main_p2'> Live The Life You Want</p>
+                            <p className='main_p'> Live The Life You Want</p>
 
 
                             <button onClick={loginPage} className='thought-btn'>Take Control</button>
@@ -97,11 +97,11 @@ function Landing() {
 
 
 
-                    <h2 className='title_margin'>Transform Negative Thoughts</h2>
+                    <h2 className='sub_seca2'>Transform Negative Thoughts</h2>
                     <p className='subtitlea'>Make Them Positive</p>
 
                     <div className='thought_effects'>
-                        <div className='card'>
+                        <div className='cloud-card '>
                             <img src={rain} className='card-icon'></img>
                             <h3> Negative Thought </h3>
                             <p> "I cant do it" </p>
@@ -113,7 +113,7 @@ function Landing() {
                         </div>
 
 
-                        <div className='card'>
+                        <div className='cloud-card '>
                             <img src={sun} className='card-icon'></img>
                             <h3> Positive Thought </h3>
                             <p> "I can do it!"</p>

@@ -15,15 +15,15 @@ html {
 
 
 .title {
-  font-size: 6rem;
-  margin: 5px;
+  font-size: 6vw;
+  margin: 0%;
 
 }
 
 .title_margin {
-  font-size: 4rem;
-  margin-bottom: 5px;
-  margin-top: 150px;
+  font-size: 4vw;
+
+
 }
 
 .subtitle {
@@ -35,10 +35,10 @@ html {
 }
 
 .subtitlea {
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   color: #555;
-  margin-top: 0px;
-  margin-bottom: 25px;
+  margin-top: 0vh;
+  margin-bottom: 5vh;
 
 }
 
@@ -146,13 +146,16 @@ html {
 }
 
 .monk_logo {
-  height: 40%;
-  width: 40%;
+  width: 20vw;
+  /* ✅ Scales based on viewport width */
+  max-width: none;
+  /* ✅ Prevents it from getting too big */
+  height: auto;
+  /* ✅ Maintains aspect ratio */
 
   object-fit: contain;
-  margin: 10px;
-  margin-right: -45px;
-  margin-top: 40px;
+  margin-top: 0vh;
+
 
 }
 
@@ -204,9 +207,9 @@ html {
   display: flex;
   position: relative;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-
+  padding-top: 10vh;
   width: 100vw;
   min-height: 100vh;
 
@@ -284,9 +287,9 @@ html {
 }
 
 .sub_seca2 {
-  font-size: 4rem;
-  margin-bottom: 0px;
-  margin-top: 150px;
+  font-size: 4vw;
+  margin-bottom: 0vh;
+  margin-top: 10vh;
 }
 
 .sub_sec {
@@ -393,9 +396,9 @@ html {
 .thought_effects {
   display: flex;
   justify-content: space-evenly;
-  width: 100%;
-  margin: 0 auto;
-  margin-bottom: 40px;
+
+
+  margin-bottom: 10vh;
 
 }
 
@@ -423,19 +426,16 @@ html {
 
 .card {
   position: relative;
-  width: 300px;
-  /* Fixed width 
-  
-    
-
-  */
-  height: 250px;
+  height: 30vh;
+  /* ✅ Prevents the card from being too short */
+  width: 15vw;
+  /* ✅ Prevents it from being too tall */
   /* Fixed height */
   background-color: white;
 
   /* Ensures the cloud fully fills the container */
   text-align: center;
-  padding: 10px;
+  padding: 2vh 1.5vw;
 
   /* Subtle shadow for depth */
   color: #333;
@@ -449,9 +449,10 @@ html {
   /* Center content vertically */
   align-items: center;
   /* Center content horizontally */
-  border-radius: 0;
+
   /* No extra radius, SVG handles the shape */
-  margin: 20px;
+  margin-right: 2vw;
+  margin-left: 2vw;
   /* 🌟 Rounded corners */
   border-radius: 20px;
 
@@ -460,32 +461,64 @@ html {
 
 }
 
+@media (max-width: 1024px) {
 
+  /* ✅ Tablets */
+  .card {
+    width: 30vw;
+    height: 20vh;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* ✅ Large phones */
+  .card {
+    width: 22vw;
+    height: 10vh;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* ✅ Small phones (iPhones) */
+  .card {
+    width: 10vw;
+    /* ✅ Make it wider */
+    height: auto;
+    /* ✅ Allow height to adjust naturally */
+
+  }
+
+}
 
 
 
 
 .card h3 {
-  margin-bottom: 0px;
+  margin-bottom: 0vh;
   /* Reduce space below the heading */
-  margin-top: -20px;
-  font-size: 2.5rem;
+  margin-top: 0vh;
+  font-size: 3vw;
 
 
 }
 
 .card p {
-  margin-top: 0;
+  margin-top: 0vh;
   /* Remove space above the paragraph */
-  margin-bottom: 60px;
+  margin-bottom: 2vh;
   /* Reduce space below the paragraph */
-  font-size: 21px;
+  font-size: 1vw;
 }
 
 .card img {
-  margin-top: 15px;
-  margin-bottom: 10px;
+  margin-top: 0vh;
+
   /* Reduce space above the image */
+  width: 10vw;
+  height: auto;
+
 }
 
 
@@ -496,22 +529,15 @@ html {
 
 .cloud-card {
   position: relative;
-  width: 800px;
-  /* Fixed width 
-  
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><path d="M150 40C100 20 50 60 60 110C20 120 30 170 70 180C40 200 50 260 120 240C90 270 150 290 190 260C230 290 280 240 260 200C290 190 270 140 240 140C290 120 280 70 220 80C230 50 190 30 150 40Z" fill="%23d2d2e4"/></svg>') no-repeat center center;
+  width: 17vw;
 
-  */
-  height: 500px;
+  height: 30vh;
   /* Fixed height */
-  background-image: url('assets/cloud.png');
-  background-size: contain;
+  background-color: white;
 
-  background-repeat: no-repeat;
-  background-position: center;
   /* Ensures the cloud fully fills the container */
   text-align: center;
-  padding: 10px;
+  padding: 1.5vh 1vw;
 
   /* Subtle shadow for depth */
   color: #333;
@@ -525,34 +551,70 @@ html {
   /* Center content vertically */
   align-items: center;
   /* Center content horizontally */
-  border-radius: 0;
-  /* No extra radius, SVG handles the shape */
+
+  /* 🌟 Rounded corners */
+  border-radius: 20px;
+
+  /* 🌟 Soft shadow for depth */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+@media (max-width: 1024px) {
+
+  /* ✅ Tablets */
+  .cloud-card {
+    width: 30vw;
+    height: 20vh;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* ✅ Large phones */
+  .cloud-card {
+    width: 22vw;
+    height: 10vh;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* ✅ Small phones (iPhones) */
+  .cloud-card {
+    width: 10vw;
+    /* ✅ Make it wider */
+    height: auto;
+    /* ✅ Allow height to adjust naturally */
+
+  }
 
 }
 
 
 
-
 .cloud-card h3 {
-  margin-bottom: 0px;
+  margin-bottom: 0vh;
   /* Reduce space below the heading */
-  margin-top: -20px;
-  font-size: 2.5rem;
+  margin-top: 0vh;
+  font-size: 2vw;
 
 
 }
 
 .cloud-card p {
-  margin-bottom: 30px;
-  margin-top: 0px;
+  margin-bottom: 2vh;
+  margin-top: 0vh;
   /* Reduce space below the paragraph */
-  font-size: 21px;
+  font-size: 1vw;
 }
 
 .cloud-card img {
-  margin-top: 15px;
-  margin-bottom: 10px;
+  margin-top: 0vh;
+  margin-bottom: 1vh;
   /* Reduce space above the image */
+  width: 8vw;
 }
 
 
@@ -754,15 +816,15 @@ html {
   justify-content: center;
   align-items: center;
   display: flex;
-  margin-left: -100px;
-  margin-right: -100px;
+
 }
 
 .arrow_img {
-  width: 200px;
+  width: 25vw;
   /* Icon size */
   height: auto;
-  margin: 0px;
+  margin-right: -5vw;
+  margin-left: -5vw;
 
 }
 
@@ -870,17 +932,19 @@ html {
 
 
 .main_landing {
+  display: flex;
+  flex-direction: column;
   text-align: left;
   align-items: flex-start;
   justify-content: flex-start;
-  padding-top: 200px;
-  padding-right: 40px;
+  padding: 0vh 2vw;
+  margin: 0vw;
 
 }
 
 .main_p {
-  font-size: 25px;
-  margin: 5px;
+  font-size: 1.5vw;
+  margin: 0%;
 }
 
 .main_p2 {
@@ -1245,13 +1309,13 @@ input {
   /* White background */
   color: #333;
   /* Text color */
-  border: 2px solid #ccc;
+  border: 0.1vw solid #ccc;
   /* Subtle border */
   border-radius: 20px;
   /* Rounded corners */
-  padding: 10px 20px;
+  padding: 0.7vw 1.2vw;
   /* Space inside the button */
-  font-size: 16px;
+  font-size: 1vw;
   /* Font size */
   font-weight: bold;
   /* Bold text */
@@ -1260,7 +1324,7 @@ input {
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   /* Smooth hover effect */
 
-  margin-top: 20px;
+  margin-top: 10%;
   font-family: "Chewy", serif;
 
 
@@ -1784,11 +1848,11 @@ textarea {
   top: 0;
   width: 30vw;
   /* ✅ Use viewport width instead of fixed pixels */
-  max-width: 500px;
+  max-width: 50vh;
   /* ✅ Ensures it doesn’t get too large */
   height: auto;
   /* ✅ Keeps aspect ratio */
-  max-height: 50vh;
+  max-height: none;
 
 
   /* Keep it from taking too much space */
@@ -1797,8 +1861,8 @@ textarea {
   object-fit: cover;
   opacity: 0.8;
   /* Slight transparency */
-  margin-left: 3.5%;
-  margin-top: 8%;
+  margin-left: 2vw;
+  margin-top: 8vh;
 
 }
 
@@ -1882,7 +1946,7 @@ textarea {
   position: relative;
   /* Make sure it's layered above */
   z-index: 1;
-  padding: 20px;
+
 }
 
 .temple {
@@ -1892,17 +1956,19 @@ textarea {
   top: 0;
   width: 35vw;
   /* ✅ Use viewport width instead of fixed pixels */
-  max-width: 500px;
+  max-width: 50vh;
   /* ✅ Ensures it doesn’t get too large */
   height: auto;
   /* ✅ Keeps aspect ratio */
-  max-height: 40vh;
+  max-height: none;
   /* Keep it from taking too much space */
   z-index: 0;
   /* Behind everything else */
   object-fit: cover;
-  margin-right: 2.5%;
-  margin-top: 10%;
+
+
+  margin-right: 0vw;
+  margin-top: 6vh;
 
 
 
