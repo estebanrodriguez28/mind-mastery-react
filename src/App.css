@@ -406,7 +406,7 @@ html {
 
   /* ✅ Small phones */
   .sub_seca2 {
-    font-size: 8vw;
+    font-size: 7vw;
     margin-bottom: 0vh;
     margin-top: 10vh;
   }
@@ -684,7 +684,7 @@ html {
 
   /* ✅ Small phones (iPhones) */
   .card {
-    width: 15vw;
+    width: 25vw;
     /* ✅ Make it wider */
     height: auto;
     /* ✅ Allow height to adjust naturally */
@@ -832,7 +832,7 @@ html {
 
   /* ✅ Small phones (iPhones) */
   .cloud-card {
-    width: 10vw;
+    width: 30vw;
     /* ✅ Make it wider */
     height: auto;
     /* ✅ Allow height to adjust naturally */
