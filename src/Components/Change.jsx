@@ -203,6 +203,7 @@ function Change() {
                         <button
                             className='custom-button'
                             onClick={() => useGpt(n_thought)}
+                            onTouchStart={() => useGpt(n_thought)}
                             data-tooltip-id="ai-tooltip"
                         >
 
@@ -219,6 +220,7 @@ function Change() {
                         <button
                             className="square-check-button"
                             onClick={createThought}
+                            onTouchStart={createThought}
                             data-tooltip-id="check-tooltip"
                         >
                             <Check size={40} className="square-check-icon" />
