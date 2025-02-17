@@ -367,12 +367,27 @@ html {
 
 }
 
-.sub_seca {
-  font-size: 4rem;
-  margin-bottom: 0px;
-  margin-top: 50px;
+@media (max-width: 768px) {
+
+
+  /* ✅ Small phones */
+  .login_div {
+    width: 70vw;
+    /* Fixed width */
+    height: 20vh;
+    padding: 4vh 3vw;
+  }
 }
 
+
+@media (max-width: 480px) {
+  .login_div {
+    width: 80vw;
+    /* Fixed width */
+    height: 25vh;
+    padding: 4vh 3vw;
+  }
+}
 
 
 
@@ -1611,6 +1626,23 @@ input {
 
 }
 
+@media (max-width: 768px) {
+
+  /* ✅ Large phones */
+  .signup-btn {
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* ✅ Small phones */
+  .signup-btn {
+    font-size: 4vw;
+  }
+}
+
+
 
 
 .signup-btn:hover {
@@ -1714,6 +1746,23 @@ input {
   text-decoration: underline;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+
+  /* ✅ Large phones */
+  .link {
+    font-size: 4vw;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* ✅ Small phones */
+  .link {
+    font-size: 5vw;
+  }
+}
+
 
 .signup {
   display: flex;

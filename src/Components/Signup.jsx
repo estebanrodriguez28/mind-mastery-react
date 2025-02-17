@@ -62,9 +62,9 @@ function Signup() {
 
 
                 <div>
-                    <h1 className='sub_sec2'>Live The Life You Want</h1>
+                    <h1 className='sub_seca3'>Live The Life You Want</h1>
 
-                    <p className='subtitle2'>Control Your Thoughts</p>
+                    <p className='subtitlea'>Control Your Thoughts</p>
                 </div>
 
 
@@ -113,7 +113,7 @@ function Signup() {
 
 
 
-                    <p className='subtitle2'> Already Have An Account? </p>
+                    <p className='subtitlea'> Already Have An Account? </p>
                     <button className='link' onClick={loginPage}>Sign In</button>
 
 
