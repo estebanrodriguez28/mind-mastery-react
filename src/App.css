@@ -496,6 +496,22 @@ html {
   margin-top: 0px;
 }
 
+@media (max-width: 768px) {
+
+  /* ✅ Large phones */
+  .sub_thought {
+    font-size: 6vw;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* ✅ Small phones */
+  .sub_thought {
+    font-size: 8vw;
+  }
+}
+
 .top_landing {
   justify-content: center;
   align-items: center;
@@ -1388,7 +1404,7 @@ html {
   /* ✅ Large phones */
   .thought_bubble2 {
     width: 50vw;
-    height: 15vh;
+    height: 12vh;
     margin: 5vh 0vw;
   }
 }
@@ -1397,8 +1413,8 @@ html {
 
   /* ✅ Small phones */
   .thought_bubble2 {
-    width: 60vw;
-    height: 20vh;
+    width: 55vw;
+    height: 15vh;
     margin: 5vh 0vw;
   }
 }
@@ -1436,7 +1452,7 @@ html {
   /* ✅ Large phones */
   .thought_bubble3 {
     width: 50vw;
-    height: 15vh;
+    height: 12vh;
     margin: 5vh 0vw;
   }
 }
@@ -1445,8 +1461,8 @@ html {
 
   /* ✅ Small phones */
   .thought_bubble3 {
-    width: 60vw;
-    height: 20vh;
+    width: 55vw;
+    height: 15vh;
     margin: 5vh 0vw;
   }
 }
