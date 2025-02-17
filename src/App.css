@@ -2954,13 +2954,13 @@ textarea {
 .pthought-card2 {
   opacity: 0.5;
   position: relative;
-  width: 600px;
-  height: 600px;
+  width: 40vw;
+  height: 60vh;
   background-color: rgb(255, 218, 98);
   text-align: center;
-  padding: 20px;
+  padding: 2vh 1vw;
   border-radius: 20px;
-  margin: 30px auto;
+  margin: 5vh auto;
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 
   /* 🔥 Golden Glow */
@@ -2982,16 +2982,16 @@ textarea {
 
 
 .pthought-card2 h3 {
-  margin-bottom: 5px;
+  margin-bottom: 1vh;
   /* Reduce space below the heading */
-  margin-top: -15px;
-  font-size: 2.5rem;
+  margin-top: 0vh;
+  font-size: 3vw;
 
 
 }
 
 .pthought-card2 p {
-  margin-top: 0;
+  margin-top: 1vh;
   /* Remove space above the paragraph */
   margin-bottom: 20px;
   /* Reduce space below the paragraph */
@@ -2999,9 +2999,9 @@ textarea {
 }
 
 .pthought-card2 img {
-  margin-top: 15px;
-  margin-bottom: 5px;
-  width: 130px;
+  margin-top: 1vh;
+  margin-bottom: 0vh;
+  width: 10vw;
   /* Icon size */
   height: auto;
   /* Reduce space above the image */
@@ -3010,21 +3010,21 @@ textarea {
 .pthought-card2 textarea {
 
   /* Set the height for multiple lines */
-  padding: 10px;
+  padding: 2vh 2vw;
   /* Add padding inside the textarea for spacing */
-  font-size: 32px;
+  font-size: 2vw;
   /* Make the text larger and more readable */
   border: 1px solid #ccc;
   /* Add a border */
-  border-radius: 5px;
+  border-radius: 20px;
   /* Round the corners */
   resize: none;
   /* Allow resizing only vertically */
   box-sizing: border-box;
   /* Ensure padding doesn't affect the overall size */
-  width: 500px;
+  width: 35vw;
   /* Full width */
-  height: 300px;
+  height: 30vh;
   /* Larger height */
   margin-bottom: 50px;
   /* Minimum height */
@@ -3055,4 +3055,140 @@ textarea {
 .pthought-card2 {
   animation: card-glow 4s infinite ease-in-out;
   /* 🔥 Slow pulsing glow */
+}
+
+
+@media (max-width: 768px) {
+
+  /* ✅ Large phones */
+  .pthought-card2 {
+
+    width: 80vw;
+    height: 40vh;
+
+  }
+
+
+
+
+
+
+  .pthought-card2 h3 {
+    margin-bottom: 1vh;
+    /* Reduce space below the heading */
+    margin-top: 0vh;
+    font-size: 6vw;
+
+
+  }
+
+  .pthought-card2 p {
+    margin-top: 1vh;
+    /* Remove space above the paragraph */
+    margin-bottom: 20px;
+    /* Reduce space below the paragraph */
+    font-size: 21px;
+  }
+
+  .pthought-card2 img {
+    margin-top: 1vh;
+    margin-bottom: 0vh;
+    width: 15vw;
+    /* Icon size */
+    height: auto;
+    /* Reduce space above the image */
+  }
+
+  .pthought-card2 textarea {
+
+    /* Set the height for multiple lines */
+    padding: 2vh 2vw;
+    /* Add padding inside the textarea for spacing */
+    font-size: 4vw;
+    /* Make the text larger and more readable */
+    border: 1px solid #ccc;
+    /* Add a border */
+    border-radius: 20px;
+    /* Round the corners */
+    resize: none;
+    /* Allow resizing only vertically */
+    box-sizing: border-box;
+    /* Ensure padding doesn't affect the overall size */
+    width: 55vw;
+    /* Full width */
+    height: 25vh;
+    /* Larger height */
+    margin-bottom: 2vh;
+    /* Minimum height */
+    font-family: "Chewy", serif;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  /* ✅ Small phones */
+  /* ✅ Large phones */
+  .pthought-card2 {
+
+    width: 80vw;
+    height: 40vh;
+
+  }
+
+
+
+
+
+
+  .pthought-card2 h3 {
+    margin-bottom: 1vh;
+    /* Reduce space below the heading */
+    margin-top: 0vh;
+    font-size: 6vw;
+
+
+  }
+
+  .pthought-card2 p {
+    margin-top: 1vh;
+    /* Remove space above the paragraph */
+    margin-bottom: 20px;
+    /* Reduce space below the paragraph */
+    font-size: 21px;
+  }
+
+  .pthought-card2 img {
+    margin-top: 1vh;
+    margin-bottom: 0vh;
+    width: 15vw;
+    /* Icon size */
+    height: auto;
+    /* Reduce space above the image */
+  }
+
+  .pthought-card2 textarea {
+
+    /* Set the height for multiple lines */
+    padding: 2vh 2vw;
+    /* Add padding inside the textarea for spacing */
+    font-size: 4vw;
+    /* Make the text larger and more readable */
+    border: 1px solid #ccc;
+    /* Add a border */
+    border-radius: 20px;
+    /* Round the corners */
+    resize: none;
+    /* Allow resizing only vertically */
+    box-sizing: border-box;
+    /* Ensure padding doesn't affect the overall size */
+    width: 55vw;
+    /* Full width */
+    height: 25vh;
+    /* Larger height */
+    margin-bottom: 2vh;
+    /* Minimum height */
+    font-family: "Chewy", serif;
+  }
+
 }
