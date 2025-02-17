@@ -832,7 +832,7 @@ html {
 
   /* ✅ Small phones (iPhones) */
   .cloud-card {
-    width: 30vw;
+    width: 60vw;
     /* ✅ Make it wider */
     height: auto;
     /* ✅ Allow height to adjust naturally */
