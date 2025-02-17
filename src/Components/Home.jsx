@@ -90,16 +90,16 @@ function Home() {
         <img src={zen} className={`zen slide-in ${show ? "show" : ""}`} />
         <img src={hot_spring} className={`zen2 slide-in ${show ? "show" : ""}`} />
 
+        <div className="page-content">
+          <div className='top_landing'>
 
-        <div className='top_landing'>
-
-          <img src={monk} className='monk_logo' onClick={loginPage}></img>
-          <div className='main_landing'>
-            <h1 className='title'>Welcome {username}</h1>
-            <p className='main_p'>Master Your Mind. Master Your Life.</p>
+            <img src={monk} className='monk_logo' onClick={loginPage}></img>
+            <div className='main_landing'>
+              <h1 className='title'>Welcome {username}</h1>
+              <p className='main_p'>Master Your Mind. Master Your Life.</p>
+            </div>
           </div>
         </div>
-
 
 
 
