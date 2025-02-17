@@ -1562,11 +1562,11 @@ html {
 .dumbell-icon {
   color: #4A90E2;
   /* Default color */
-  width: 48px;
+  width: 10vw;
   /* Default size */
-  height: 48px;
+  height: 10vh;
   transition: all 0.2s ease;
-  margin: 35px;
+
 }
 
 /* Make it darker and larger on hover */
