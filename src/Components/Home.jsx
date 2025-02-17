@@ -86,22 +86,22 @@ function Home() {
 
   return (
     <>
-      <div className='parent2'>
+      <div className='parent6'>
         <img src={zen} className={`zen slide-in ${show ? "show" : ""}`} />
         <img src={hot_spring} className={`zen2 slide-in ${show ? "show" : ""}`} />
 
-        <div className='container'>
-          <div className='top-element'>
 
-            <img src={monk} className='monk_login' onClick={loginPage}></img>
-            <div className='home_welcome'>
-              <h1 className='sub_sec2'>Welcome {username}</h1>
-              <p className='subtitle2'>Master Your Mind. Master Your Life.</p>
-            </div>
+        <div className='top_landing'>
+
+          <img src={monk} className='monk_login' onClick={loginPage}></img>
+          <div className='main_landing'>
+            <h1 className='sub_sec2'>Welcome {username}</h1>
+            <p className='subtitle2'>Master Your Mind. Master Your Life.</p>
           </div>
-
-
         </div>
+
+
+
 
 
 

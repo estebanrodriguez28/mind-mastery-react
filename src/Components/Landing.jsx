@@ -51,7 +51,7 @@ function Landing() {
                             <p className='main_p'> Live The Life You Want</p>
 
 
-                            <button onClick={loginPage} className='thought-btn'>Take Control</button>
+                            <button onClick={loginPage} className='thought-btn2'>Take Control</button>
 
 
 

@@ -543,13 +543,13 @@ html {
 }
 
 .top-element {
-  margin-top: 20px;
+  margin-top: 5vh;
   /* Optional padding for spacing */
   display: flex;
   /* Background color for clarity */
-  width: 100vw;
+
   /* Stretch the content across the container */
-  text-align: center;
+  text-align: left;
   /* Center text horizontally (optional) */
   justify-content: center;
   align-items: flex-start;
@@ -1245,8 +1245,8 @@ html {
   display: flex;
   flex-direction: column;
   text-align: left;
-  align-items: flex-start;
-  justify-content: flex-start;
+
+
   padding: 0vh 2vw;
   margin: 0vw;
 
@@ -1681,7 +1681,7 @@ input {
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   /* Smooth hover effect */
 
-  margin-top: 10%;
+  margin-top: 2vh;
   font-family: "Chewy", serif;
 
 
@@ -1728,6 +1728,75 @@ input {
 }
 
 .thought-btn:active {
+  background-color: #e0e0e0;
+  /* Even darker when clicked */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  /* Pressed effect */
+}
+
+
+
+
+.thought-btn2 {
+  background-color: white;
+  /* White background */
+  color: #333;
+  /* Text color */
+  border: 0.1vw solid #ccc;
+  /* Subtle border */
+  border-radius: 20px;
+  /* Rounded corners */
+  padding: 1vh 0vw;
+  /* Space inside the button */
+  font-size: 1vw;
+  /* Font size */
+  font-weight: bold;
+  /* Bold text */
+  cursor: pointer;
+  /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  /* Smooth hover effect */
+
+  margin-top: 2vh;
+  font-family: "Chewy", serif;
+  width: 8vw;
+
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+  /* ✅ Large phones */
+  .thought-btn2 {
+
+    /* Space inside the button */
+    width: 20vw;
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* ✅ Small phones */
+  .thought-btn2 {
+    width: 25vw;
+    /* Space inside the button */
+    font-size: 3vw;
+  }
+}
+
+
+.thought-btn2:hover {
+  background-color: #f0f0f0;
+  /* Slightly darker on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Add shadow on hover */
+}
+
+.thought-btn2:active {
   background-color: #e0e0e0;
   /* Even darker when clicked */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
