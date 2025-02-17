@@ -86,17 +86,17 @@ function Home() {
 
   return (
     <>
-      <div className='parent6'>
+      <div className='parent5'>
         <img src={zen} className={`zen slide-in ${show ? "show" : ""}`} />
         <img src={hot_spring} className={`zen2 slide-in ${show ? "show" : ""}`} />
 
 
         <div className='top_landing'>
 
-          <img src={monk} className='monk_login' onClick={loginPage}></img>
+          <img src={monk} className='monk_logo' onClick={loginPage}></img>
           <div className='main_landing'>
-            <h1 className='sub_sec2'>Welcome {username}</h1>
-            <p className='subtitle2'>Master Your Mind. Master Your Life.</p>
+            <h1 className='title'>Welcome {username}</h1>
+            <p className='main_p'>Master Your Mind. Master Your Life.</p>
           </div>
         </div>
 
@@ -105,53 +105,53 @@ function Home() {
 
 
 
-        <div className='thoughts_list'>
-          <h1 className='sub_sec3'> ---- Thoughts ---- </h1>
+
+        <h1 className='sub_seca2'> ---- Thoughts ---- </h1>
 
 
 
-          {
+        {
 
-            thoughts.length > 0 ? (
-
-
-              <div>
-                <button onClick={changePage} className='thought-btn'>Add Thought</button>
-
-                {thoughts.map((thought) => (
+          thoughts.length > 0 ? (
 
 
-                  <div
-                    key={thought._id}
-                    className={thought.isPositive ? "thought_bubble3" : "thought_bubble2"}
-                    onClick={() => handleClick(thought._id)}
-                  >
+            <div>
+              <button onClick={changePage} className='thought-btn'>Add Thought</button>
+
+              {thoughts.map((thought) => (
 
 
-                    <h2 className='sub_thought'>{thought.title}</h2>
-                  </div>
+                <div
+                  key={thought._id}
+                  className={thought.isPositive ? "thought_bubble3" : "thought_bubble2"}
+                  onClick={() => handleClick(thought._id)}
+                >
 
 
-
-
-                ))}
-              </div>) : (
-
-
-              <>
-                <h3 className='subtitle3'>Create your first thought</h3>
-                <button onClick={changePage} className='thought-btn'>Add Thought</button>
-
-              </>
+                  <h2 className='sub_thought'>{thought.title}</h2>
+                </div>
 
 
 
-            )
-          }
+
+              ))}
+            </div>) : (
+
+
+            <>
+              <h3 className='subtitle3'>Create your first thought</h3>
+              <button onClick={changePage} className='thought-btn'>Add Thought</button>
+
+            </>
 
 
 
-        </div>
+          )
+        }
+
+
+
+
 
 
 

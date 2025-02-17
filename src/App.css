@@ -210,11 +210,16 @@ html {
   /* ✅ Prevents it from getting too big */
   height: auto;
   /* ✅ Maintains aspect ratio */
-
+  cursor: pointer;
   object-fit: contain;
   margin-top: 0vh;
   margin-right: 0vw;
 
+
+}
+
+.monk_logo:hover {
+  filter: brightness(0.8);
 
 }
 
@@ -486,7 +491,7 @@ html {
 }
 
 .sub_thought {
-  font-size: 4rem;
+  font-size: 4vw;
   margin-bottom: 0px;
   margin-top: 0px;
 }
@@ -1349,9 +1354,8 @@ html {
 
 
 .thought_bubble2 {
-  width: 550px;
-
-  height: 250px;
+  width: 30vw;
+  height: 25vh;
   /* Fixed height */
   background-color: white;
   background-size: contain;
@@ -1363,8 +1367,8 @@ html {
   align-items: center;
   display: flex;
   transition: filter 0.3s ease;
-  margin: 55px;
-  border-radius: 20px;
+  margin: 10vh 5vw;
+  border-radius: 50px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 
 
@@ -1378,9 +1382,30 @@ html {
 
 }
 
+
+@media (max-width: 768px) {
+
+  /* ✅ Large phones */
+  .thought_bubble2 {
+    width: 50vw;
+    height: 15vh;
+    margin: 5vh 0vw;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* ✅ Small phones */
+  .thought_bubble2 {
+    width: 60vw;
+    height: 20vh;
+    margin: 5vh 0vw;
+  }
+}
+
 .thought_bubble3 {
-  width: 550px;
-  height: 250px;
+  width: 30vw;
+  height: 25vh;
   background-color: rgb(255, 218, 98);
   background-size: contain;
   background-repeat: no-repeat;
@@ -1390,7 +1415,7 @@ html {
   align-items: center;
   display: flex;
   transition: filter 0.3s ease, box-shadow 0.5s ease-in-out;
-  margin: 55px;
+  margin: 10vh 5vw;
 
 
   /* 🔥 Warm Golden Glow */
@@ -1404,6 +1429,26 @@ html {
 .thought_bubble3:hover {
   filter: brightness(0.8);
 
+}
+
+@media (max-width: 768px) {
+
+  /* ✅ Large phones */
+  .thought_bubble3 {
+    width: 50vw;
+    height: 15vh;
+    margin: 5vh 0vw;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* ✅ Small phones */
+  .thought_bubble3 {
+    width: 60vw;
+    height: 20vh;
+    margin: 5vh 0vw;
+  }
 }
 
 
@@ -2369,13 +2414,13 @@ textarea {
   left: 0;
   /* Stick to the left side */
   top: 0;
-  width: 40vw;
+  width: 35vw;
   /* ✅ Use viewport width instead of fixed pixels */
-  max-width: 500px;
+  max-width: 50vw;
   /* ✅ Ensures it doesn’t get too large */
   height: auto;
   /* ✅ Keeps aspect ratio */
-  max-height: 40vh;
+  max-height: none;
 
 
   /* Keep it from taking too much space */
@@ -2384,8 +2429,8 @@ textarea {
   object-fit: cover;
   opacity: 0.8;
   /* Slight transparency */
-  margin-left: 5%;
-  margin-top: 12%;
+  margin-left: 2vw;
+  margin-top: 20vh;
 
 }
 
@@ -2400,21 +2445,21 @@ textarea {
 
   /* ✅ Make sure it fills the height height: 35vh; */
 
-  width: 30vw;
+  width: 27vw;
   /* ✅ Use viewport width instead of fixed pixels */
-  max-width: 400px;
+  max-width: 50vh;
   /* ✅ Ensures it doesn’t get too large */
   height: auto;
   /* ✅ Keeps aspect ratio */
-  max-height: 40vh;
+  max-height: none;
   /* Keep it from taking too much space */
   z-index: 0;
   /* Behind everything else */
   object-fit: cover;
   opacity: 0.8;
   /* Slight transparency */
-  margin-right: 3.5%;
-  margin-top: 16%;
+  margin-right: 2vw;
+  margin-top: 25vh;
 
 }
 
