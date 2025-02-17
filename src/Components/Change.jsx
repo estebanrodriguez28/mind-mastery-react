@@ -147,15 +147,15 @@ function Change() {
             <div className='parent5'>
 
 
-                <img src={monk} className='monk_normal3' onClick={homePage}></img>
+                <img src={monk} className='monk_logo' onClick={homePage}></img>
 
 
-                <h1 className="sub_sec">Create Your Thought</h1>
-                <p className="subtitle4">Click the green checkmark to create the thought!</p>
+                <h1 className="sub_seca3">Create Your Thought</h1>
+                <p className="subtitlea">Click the green checkmark to create the thought!</p>
 
 
                 <form>
-                    <label className='title-label'>Thought Title:</label>
+                    <label className='title-label'>Thought Title</label>
                     <textarea className='text_title'
                         maxLength="35"
                         placeholder='(e.g. Doubt)'
@@ -217,7 +217,7 @@ function Change() {
                         />
 
                         <button
-                            className="square-check-button2"
+                            className="square-check-button"
                             onClick={createThought}
                             data-tooltip-id="check-tooltip"
                         >
