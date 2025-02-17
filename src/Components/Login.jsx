@@ -53,9 +53,9 @@ function Login() {
 
 
                 <div>
-                    <h1 className='sub_sec2'>Continue Mastering Your Mind</h1>
+                    <h1 className='sub_seca3'>Continue Mastering Your Mind</h1>
 
-                    <p className='subtitle2'>Through Practice</p>
+                    <p className='subtitlea'>Through Practice</p>
                 </div>
 
 
@@ -97,7 +97,7 @@ function Login() {
 
 
 
-                    <p className='subtitle2'> Don't have an account? </p>
+                    <p className='subtitlea'> Don't have an account? </p>
                     <button className='link' onClick={signupPage}>Sign Up</button>
 
 

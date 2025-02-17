@@ -355,13 +355,13 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  width: 500px;
+  width: 30vw;
   /* Fixed width */
-  height: 250px;
+  height: 20vh;
   border-radius: 25px;
-  padding: 20px;
+  padding: 4vh 1vw;
   background: linear-gradient(0deg, rgb(200, 13, 160) 0%, rgba(232, 147, 14, 1) 38%, rgba(0, 212, 255, 1) 100%);
-  margin-bottom: 25px;
+  margin-bottom: 5vh;
 
 
 
@@ -409,6 +409,45 @@ html {
     font-size: 7vw;
     margin-bottom: 0vh;
     margin-top: 10vh;
+  }
+}
+
+
+
+
+.sub_seca3 {
+  font-size: 4vw;
+  margin-bottom: 0vh;
+  margin-top: 0vh;
+}
+
+@media (max-width: 1024px) {
+
+  /* ✅ Tablets */
+  .sub_seca3 {
+    font-size: 5vw;
+    margin-bottom: 0vh;
+
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* ✅ Large phones */
+  .sub_seca3 {
+    font-size: 6vw;
+    margin-bottom: 0vh;
+
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* ✅ Small phones */
+  .sub_seca3 {
+    font-size: 7vw;
+    margin-bottom: 0vh;
+
   }
 }
 
@@ -1076,7 +1115,7 @@ html {
 }
 
 .arrow_img {
-  width: 25vw;
+  width: 20vw;
   /* Icon size */
   height: auto;
   margin-right: -5vw;
@@ -1237,9 +1276,9 @@ html {
 
 .monk_login {
   cursor: pointer;
-  height: 15%;
-  width: 15%;
-  margin-top: 60px;
+  height: 30vh;
+  width: 40vw;
+  margin-top: 5vh;
   object-fit: contain;
   transition: filter 0.3s ease;
 
@@ -1545,6 +1584,7 @@ input {
 }
 
 .signup-btn {
+
   background-color: white;
   /* White background */
   color: #333;
@@ -1553,9 +1593,9 @@ input {
   /* Subtle border */
   border-radius: 20px;
   /* Rounded corners */
-  padding: 10px 20px;
+  padding: 1vh 0vw;
   /* Space inside the button */
-  font-size: 16px;
+  font-size: 1vw;
   /* Font size */
   font-weight: bold;
   /* Bold text */
@@ -1564,8 +1604,10 @@ input {
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   /* Smooth hover effect */
   width: 100%;
-  margin-top: 15px;
+  margin-top: 1vw;
   font-family: "Chewy", serif;
+  justify-content: center;
+
 
 }
 
@@ -1667,8 +1709,8 @@ input {
   background: none;
   border: none;
   font-family: "Chewy", serif;
-  font-size: 20px;
-  margin-bottom: 40px;
+  font-size: 1.5vw;
+  margin-bottom: 5vh;
   text-decoration: underline;
   cursor: pointer;
 }
