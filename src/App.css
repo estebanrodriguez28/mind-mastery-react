@@ -2067,6 +2067,22 @@ textarea {
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
+@media (max-width: 768px) {
+
+  /* ✅ Large phones */
+  .custom-tooltip {
+    display: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* ✅ Small phones */
+  .title {
+    display: none !important;
+  }
+}
+
 
 /* 🟡 Base Sun Image */
 .sun-image {
