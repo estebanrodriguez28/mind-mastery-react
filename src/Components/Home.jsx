@@ -106,7 +106,7 @@ function Home() {
 
 
 
-        <h1 className='sub_seca2'> ---- Thoughts ---- </h1>
+
 
 
 
@@ -116,6 +116,7 @@ function Home() {
 
 
             <div>
+              <h1 className='sub_seca2'> ---- Thoughts ---- </h1>
               <button onClick={changePage} className='thought-btn'>Add Thought</button>
 
               {thoughts.map((thought) => (
@@ -139,7 +140,7 @@ function Home() {
 
 
             <>
-              <h3 className='subtitle3'>Create your first thought</h3>
+              <h3 className='sub_seca2'>Create your first thought</h3>
               <button onClick={changePage} className='thought-btn'>Add Thought</button>
 
             </>
