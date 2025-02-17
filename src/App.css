@@ -2007,7 +2007,7 @@ textarea {
     /* Full width */
     height: 10vh;
     font-size: 7vw;
-    padding: 4vh 2vw;
+    padding: 2vh 2vw;
   }
 }
 
@@ -2637,7 +2637,7 @@ textarea {
   .square-check-button {
     width: 8vw;
     /* Adjust as needed */
-    height: 5vh;
+    height: 4vh;
   }
 }
 
