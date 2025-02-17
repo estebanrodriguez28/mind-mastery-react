@@ -688,8 +688,8 @@ html {
     /* ✅ Make it wider */
     height: auto;
     /* ✅ Allow height to adjust naturally */
-    margin-right: 0vw;
-    margin-left: 0vw;
+    margin-right: 1vw;
+    margin-left: 1vw;
 
   }
 
@@ -834,9 +834,11 @@ html {
 
   /* ✅ Small phones (iPhones) */
   .cloud-card {
-    width: 45vw;
+    width: 35vw;
     /* ✅ Make it wider */
     height: auto;
+    margin-right: 1vw;
+    margin-left: 1vw;
     /* ✅ Allow height to adjust naturally */
 
   }
