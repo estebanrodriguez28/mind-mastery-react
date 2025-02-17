@@ -684,10 +684,12 @@ html {
 
   /* ✅ Small phones (iPhones) */
   .card {
-    width: 25vw;
+    width: 30vw;
     /* ✅ Make it wider */
     height: auto;
     /* ✅ Allow height to adjust naturally */
+    margin-right: 0vw;
+    margin-left: 0vw;
 
   }
 
@@ -832,7 +834,7 @@ html {
 
   /* ✅ Small phones (iPhones) */
   .cloud-card {
-    width: 60vw;
+    width: 45vw;
     /* ✅ Make it wider */
     height: auto;
     /* ✅ Allow height to adjust naturally */
@@ -1221,7 +1223,7 @@ html {
 
   /* ✅ Small phones */
   .main_p {
-    font-size: 4vw;
+    font-size: 3vw;
   }
 }
 
