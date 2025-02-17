@@ -161,13 +161,13 @@ function Edit() {
     return (
         <>
             <div className='parent5'>
-                <img src={monk} className='monk_normal3' onClick={homePage}></img>
+                <img src={monk} className='monk_logo' onClick={homePage}></img>
 
                 {
                     isPositive ? (
                         <>
-                            <h1 className="sub_sec">Congratulations On Sticking To Your Positive Thought</h1>
-                            <p className="subtitle">You should be so proud of overcoming the negative thought!</p>
+                            <h1 className="sub_seca3">Congratulations On Sticking To Your Positive Thought</h1>
+                            <p className="subtitlea">You should be so proud of overcoming the negative thought!</p>
 
 
                             <div className='pthought-card2' style={{ opacity: 1 }}>
@@ -190,8 +190,8 @@ function Edit() {
                     ) : (
 
                         <>
-                            <h1 className="sub_sec">Edit, Practice, or Delete Your Thought</h1>
-                            <p className="subtitle">Click the green checkmark at the bottom to save all changes!</p>
+                            <h1 className="sub_seca3">Edit, Practice, or Delete Your Thought</h1>
+                            <p className="subtitlea">Click the green checkmark at the bottom to save all changes!</p>
 
 
                             <form>
@@ -232,9 +232,9 @@ function Edit() {
 
                                 </div>
 
-                                <div className='convert2'>
+                                <div className='convert'>
 
-                                    <img src={arrow} className='arrow_img2'></img>
+                                    <img src={arrow} className='arrow_img3'></img>
                                     <button className='custom-button' onClick={() => useGpt(n_thought)}></button>
                                     <button className="delete-btn"
                                         data-tooltip-id="ai-tooltip">
