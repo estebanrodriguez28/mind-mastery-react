@@ -2078,7 +2078,7 @@ textarea {
 @media (max-width: 480px) {
 
   /* ✅ Small phones */
-  .title {
+  .custom-tooltip {
     display: none !important;
   }
 }
