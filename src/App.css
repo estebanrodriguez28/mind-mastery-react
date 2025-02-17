@@ -1566,6 +1566,7 @@ html {
   /* Default size */
   height: 10vh;
   transition: all 0.2s ease;
+  margin-top: 2vh;
 
 }
 
@@ -2634,6 +2635,7 @@ textarea {
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
   margin-top: 3vh;
+  margin-bottom: 2vh;
 
 }
 
