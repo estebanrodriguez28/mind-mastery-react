@@ -196,10 +196,10 @@ function Practice() {
                 {
                     showSuccess ? (
                         <>
-                            <img src={monk} className='monk_normal3'></img>
+                            <img src={monk} className='monk_logo'></img>
                             <Confetti numberOfPieces={200} />
-                            <h1 className="sub_sec">Congratulations!</h1>
-                            <p className="subtitle">You turned your negative thought positive!</p>
+                            <h1 className="sub_seca3">Congratulations!</h1>
+                            <p className="subtitlea">You turned your negative thought positive!</p>
                             <div className='pthought-card2' style={{ opacity: p_opacity }}>
                                 <img src={sun} className={`sun-image2 sun-glow`}></img>
                                 <h3> Positive Thought </h3>
@@ -220,9 +220,9 @@ function Practice() {
                     ) : (
 
                         <>
-                            <img src={monk} className='monk_normal3' onClick={() => editPage(thoughtId)}></img>
-                            <h1 className="sub_sec">Practice Your Positive Thought</h1>
-                            <p className="subtitle">Say the positive thought 5 times, in your head or outloud, then click the button!</p>
+                            <img src={monk} className='monk_logo' onClick={() => editPage(thoughtId)}></img>
+                            <h1 className="sub_seca3">Practice Your Positive Thought</h1>
+                            <p className="subtitlea">Say the positive thought 5 times, in your head or outloud, then click the button!</p>
 
 
 
@@ -255,9 +255,9 @@ function Practice() {
                                 </div>
 
 
-                                <div className='convert2'>
+                                <div className='convert'>
 
-                                    <img src={arrow} className='arrow_img2'></img>
+                                    <img src={arrow} className='arrow_img3'></img>
 
 
                                     <button
