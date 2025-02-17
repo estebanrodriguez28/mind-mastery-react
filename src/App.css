@@ -1980,7 +1980,7 @@ textarea {
   /* Full width */
   height: 15vh;
   /* Larger height */
-  margin-bottom: 5vh;
+  margin-bottom: 0vh;
   /* Minimum height */
   margin-top: 0vh;
   font-family: "Chewy", serif;
@@ -2005,7 +2005,7 @@ textarea {
   .text_title {
     width: 45vw;
     /* Full width */
-    height: 15vh;
+    height: 10vh;
     font-size: 7vw;
     padding: 4vh 2vw;
   }
@@ -2250,17 +2250,18 @@ textarea {
 
   /* ✅ Large phones */
   .nthought-card {
-    width: 35vw;
+    width: 30vw;
     /* Fixed width */
-    height: 20vh;
+    height: 40vh;
     padding: 2vh 1vw;
+    margin-left: 0vw;
   }
 
   .nthought-card h3 {
     margin-bottom: 1vh;
     /* Reduce space below the heading */
     margin-top: 0vh;
-    font-size: 3vw;
+    font-size: 5vw;
 
 
   }
@@ -2270,13 +2271,13 @@ textarea {
     /* Remove space above the paragraph */
     margin-bottom: 2vh;
     /* Reduce space below the paragraph */
-    font-size: 1.7vw;
+    font-size: 3vw;
   }
 
   .nthought-card img {
-    margin-top: 1vh;
+    margin-top: 0vh;
     margin-bottom: 0vh;
-    width: 10vw;
+    width: 15vw;
     /* Icon size */
     height: auto;
     /* Reduce space above the image */
@@ -2287,11 +2288,11 @@ textarea {
     /* Set the height for multiple lines */
     padding: 2vh 2vw;
     /* Add padding inside the textarea for spacing */
-    font-size: 2vw;
+    font-size: 3vw;
     /* Make the text larger and more readable */
     border: 1px solid #ccc;
     /* Add a border */
-    border-radius: 5px;
+    border-radius: 20px;
     /* Round the corners */
     resize: none;
     /* Allow resizing only vertically */
@@ -2299,7 +2300,7 @@ textarea {
     /* Ensure padding doesn't affect the overall size */
     width: 30vw;
     /* Full width */
-    height: 10vh;
+    height: 15vh;
     /* Larger height */
     margin-bottom: 2vh;
     /* Minimum height */
@@ -2309,19 +2310,20 @@ textarea {
 
 @media (max-width: 480px) {
 
-  /* ✅ Small phones */
+  /* ✅ Large phones */
   .nthought-card {
-    width: 35vw;
+    width: 30vw;
     /* Fixed width */
-    height: 20vh;
+    height: 40vh;
     padding: 2vh 1vw;
+    margin-left: 0vw;
   }
 
   .nthought-card h3 {
     margin-bottom: 1vh;
     /* Reduce space below the heading */
     margin-top: 0vh;
-    font-size: 3vw;
+    font-size: 5vw;
 
 
   }
@@ -2331,13 +2333,13 @@ textarea {
     /* Remove space above the paragraph */
     margin-bottom: 2vh;
     /* Reduce space below the paragraph */
-    font-size: 1.7vw;
+    font-size: 3vw;
   }
 
   .nthought-card img {
-    margin-top: 1vh;
+    margin-top: 0vh;
     margin-bottom: 0vh;
-    width: 10vw;
+    width: 15vw;
     /* Icon size */
     height: auto;
     /* Reduce space above the image */
@@ -2348,11 +2350,11 @@ textarea {
     /* Set the height for multiple lines */
     padding: 2vh 2vw;
     /* Add padding inside the textarea for spacing */
-    font-size: 2vw;
+    font-size: 3vw;
     /* Make the text larger and more readable */
     border: 1px solid #ccc;
     /* Add a border */
-    border-radius: 5px;
+    border-radius: 20px;
     /* Round the corners */
     resize: none;
     /* Allow resizing only vertically */
@@ -2360,7 +2362,7 @@ textarea {
     /* Ensure padding doesn't affect the overall size */
     width: 30vw;
     /* Full width */
-    height: 10vh;
+    height: 15vh;
     /* Larger height */
     margin-bottom: 2vh;
     /* Minimum height */
@@ -2478,17 +2480,18 @@ textarea {
 
   /* ✅ Large phones */
   .pthought-card {
-    width: 35vw;
+    width: 30vw;
     /* Fixed width */
-    height: 20vh;
+    height: 40vh;
     padding: 2vh 1vw;
+    margin-left: 0vw;
   }
 
   .pthought-card h3 {
     margin-bottom: 1vh;
     /* Reduce space below the heading */
     margin-top: 0vh;
-    font-size: 3vw;
+    font-size: 5vw;
 
 
   }
@@ -2498,13 +2501,13 @@ textarea {
     /* Remove space above the paragraph */
     margin-bottom: 2vh;
     /* Reduce space below the paragraph */
-    font-size: 1.7vw;
+    font-size: 3vw;
   }
 
   .pthought-card img {
-    margin-top: 1vh;
+    margin-top: 0vh;
     margin-bottom: 0vh;
-    width: 10vw;
+    width: 15vw;
     /* Icon size */
     height: auto;
     /* Reduce space above the image */
@@ -2515,11 +2518,11 @@ textarea {
     /* Set the height for multiple lines */
     padding: 2vh 2vw;
     /* Add padding inside the textarea for spacing */
-    font-size: 2vw;
+    font-size: 3vw;
     /* Make the text larger and more readable */
     border: 1px solid #ccc;
     /* Add a border */
-    border-radius: 5px;
+    border-radius: 20px;
     /* Round the corners */
     resize: none;
     /* Allow resizing only vertically */
@@ -2527,7 +2530,7 @@ textarea {
     /* Ensure padding doesn't affect the overall size */
     width: 30vw;
     /* Full width */
-    height: 10vh;
+    height: 15vh;
     /* Larger height */
     margin-bottom: 2vh;
     /* Minimum height */
@@ -2538,18 +2541,21 @@ textarea {
 @media (max-width: 480px) {
 
   /* ✅ Small phones */
+
+  /* ✅ Large phones */
   .pthought-card {
-    width: 35vw;
+    width: 30vw;
     /* Fixed width */
-    height: 20vh;
+    height: 40vh;
     padding: 2vh 1vw;
+    margin-left: 0vw;
   }
 
   .pthought-card h3 {
     margin-bottom: 1vh;
     /* Reduce space below the heading */
     margin-top: 0vh;
-    font-size: 3vw;
+    font-size: 5vw;
 
 
   }
@@ -2559,13 +2565,13 @@ textarea {
     /* Remove space above the paragraph */
     margin-bottom: 2vh;
     /* Reduce space below the paragraph */
-    font-size: 1.7vw;
+    font-size: 3vw;
   }
 
   .pthought-card img {
-    margin-top: 1vh;
+    margin-top: 0vh;
     margin-bottom: 0vh;
-    width: 10vw;
+    width: 15vw;
     /* Icon size */
     height: auto;
     /* Reduce space above the image */
@@ -2576,11 +2582,11 @@ textarea {
     /* Set the height for multiple lines */
     padding: 2vh 2vw;
     /* Add padding inside the textarea for spacing */
-    font-size: 2vw;
+    font-size: 3vw;
     /* Make the text larger and more readable */
     border: 1px solid #ccc;
     /* Add a border */
-    border-radius: 5px;
+    border-radius: 20px;
     /* Round the corners */
     resize: none;
     /* Allow resizing only vertically */
@@ -2588,7 +2594,7 @@ textarea {
     /* Ensure padding doesn't affect the overall size */
     width: 30vw;
     /* Full width */
-    height: 10vh;
+    height: 15vh;
     /* Larger height */
     margin-bottom: 2vh;
     /* Minimum height */
