@@ -20,6 +20,30 @@ html {
 
 }
 
+@media (max-width: 1024px) {
+
+  /* ✅ Tablets */
+  .title {
+    font-size: 8vw;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* ✅ Large phones */
+  .title {
+    font-size: 10vw;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* ✅ Small phones */
+  .title {
+    font-size: 12vw;
+  }
+}
+
 .title_margin {
   font-size: 4vw;
 
@@ -41,6 +65,40 @@ html {
   margin-bottom: 5vh;
 
 }
+
+@media (max-width: 1024px) {
+
+  /* ✅ Tablets */
+  .subtitlea {
+    font-size: 2.5vw;
+    color: #555;
+    margin-top: 0vh;
+    margin-bottom: 5vh;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* ✅ Large phones */
+  .subtitlea {
+    font-size: 4vw;
+    color: #555;
+    margin-top: 0vh;
+    margin-bottom: 5vh;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* ✅ Small phones */
+  .subtitlea {
+    font-size: 6vw;
+    color: #555;
+    margin-top: 0vh;
+    margin-bottom: 5vh;
+  }
+}
+
 
 .subtitle2 {
   font-size: 1.5rem;
@@ -155,8 +213,37 @@ html {
 
   object-fit: contain;
   margin-top: 0vh;
+  margin-right: 0vw;
 
 
+}
+
+@media (max-width: 1024px) {
+
+  /* ✅ Tablets */
+  .monk_logo {
+    width: 30vw;
+    margin-right: -2vw;
+
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* ✅ Large phones */
+  .monk_logo {
+    width: 40vw;
+    margin-right: -5vw;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* ✅ Small phones */
+  .monk_logo {
+    width: 50vw;
+    margin-right: -8vw;
+  }
 }
 
 .parent {
@@ -286,11 +373,45 @@ html {
   margin-top: 50px;
 }
 
+
+
+
 .sub_seca2 {
   font-size: 4vw;
   margin-bottom: 0vh;
   margin-top: 10vh;
 }
+
+@media (max-width: 1024px) {
+
+  /* ✅ Tablets */
+  .sub_seca2 {
+    font-size: 5vw;
+    margin-bottom: 0vh;
+    margin-top: 10vh;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* ✅ Large phones */
+  .sub_seca2 {
+    font-size: 6vw;
+    margin-bottom: 0vh;
+    margin-top: 10vh;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* ✅ Small phones */
+  .sub_seca2 {
+    font-size: 8vw;
+    margin-bottom: 0vh;
+    margin-top: 10vh;
+  }
+}
+
 
 .sub_sec {
   font-size: 4rem;
@@ -461,40 +582,6 @@ html {
 
 }
 
-@media (max-width: 1024px) {
-
-  /* ✅ Tablets */
-  .card {
-    width: 30vw;
-    height: 20vh;
-  }
-}
-
-@media (max-width: 768px) {
-
-  /* ✅ Large phones */
-  .card {
-    width: 22vw;
-    height: 10vh;
-  }
-}
-
-@media (max-width: 480px) {
-
-  /* ✅ Small phones (iPhones) */
-  .card {
-    width: 10vw;
-    /* ✅ Make it wider */
-    height: auto;
-    /* ✅ Allow height to adjust naturally */
-
-  }
-
-}
-
-
-
-
 .card h3 {
   margin-bottom: 0vh;
   /* Reduce space below the heading */
@@ -520,6 +607,122 @@ html {
   height: auto;
 
 }
+
+@media (max-width: 1024px) {
+
+  /* ✅ Tablets */
+  .card {
+    width: 30vw;
+    height: 20vh;
+  }
+
+  .card h3 {
+    margin-bottom: 0vh;
+    /* Reduce space below the heading */
+    margin-top: 0vh;
+    font-size: 4vw;
+
+
+  }
+
+  .card p {
+    margin-top: 0vh;
+    /* Remove space above the paragraph */
+    margin-bottom: 2vh;
+    /* Reduce space below the paragraph */
+    font-size: 1.5vw;
+  }
+
+  .card img {
+    margin-top: 0vh;
+
+    /* Reduce space above the image */
+    width: 10vw;
+    height: auto;
+
+  }
+
+
+}
+
+@media (max-width: 768px) {
+
+  /* ✅ Large phones */
+  .card {
+    width: 22vw;
+    height: 10vh;
+  }
+
+  .card h3 {
+    margin-bottom: 0vh;
+    /* Reduce space below the heading */
+    margin-top: 0vh;
+    font-size: 5vw;
+
+
+  }
+
+  .card p {
+    margin-top: 0vh;
+    /* Remove space above the paragraph */
+    margin-bottom: 2vh;
+    /* Reduce space below the paragraph */
+    font-size: 2vw;
+  }
+
+  .card img {
+    margin-top: 2vh;
+
+    /* Reduce space above the image */
+    width: 10vw;
+    height: auto;
+
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* ✅ Small phones (iPhones) */
+  .card {
+    width: 15vw;
+    /* ✅ Make it wider */
+    height: auto;
+    /* ✅ Allow height to adjust naturally */
+
+  }
+
+  .card h3 {
+    margin-bottom: 0vh;
+    /* Reduce space below the heading */
+    margin-top: 0vh;
+    font-size: 7vw;
+
+
+  }
+
+  .card p {
+    margin-top: 0vh;
+    /* Remove space above the paragraph */
+    margin-bottom: 2vh;
+    /* Reduce space below the paragraph */
+    font-size: 3vw;
+  }
+
+  .card img {
+    margin-top: 0vh;
+
+    /* Reduce space above the image */
+    width: 12vw;
+    height: auto;
+
+  }
+
+}
+
+
+
+
+
 
 
 .card:hover {
@@ -560,40 +763,6 @@ html {
 
 }
 
-
-@media (max-width: 1024px) {
-
-  /* ✅ Tablets */
-  .cloud-card {
-    width: 30vw;
-    height: 20vh;
-  }
-}
-
-@media (max-width: 768px) {
-
-  /* ✅ Large phones */
-  .cloud-card {
-    width: 22vw;
-    height: 10vh;
-  }
-}
-
-@media (max-width: 480px) {
-
-  /* ✅ Small phones (iPhones) */
-  .cloud-card {
-    width: 10vw;
-    /* ✅ Make it wider */
-    height: auto;
-    /* ✅ Allow height to adjust naturally */
-
-  }
-
-}
-
-
-
 .cloud-card h3 {
   margin-bottom: 0vh;
   /* Reduce space below the heading */
@@ -616,6 +785,91 @@ html {
   /* Reduce space above the image */
   width: 8vw;
 }
+
+
+@media (max-width: 1024px) {
+
+  /* ✅ Tablets */
+  .cloud-card {
+    width: 30vw;
+    height: 20vh;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* ✅ Large phones */
+  .cloud-card {
+    width: 25vw;
+    height: 10vh;
+  }
+
+  .cloud-card h3 {
+    margin-bottom: 0vh;
+    /* Reduce space below the heading */
+    margin-top: 0vh;
+    font-size: 3vw;
+
+
+  }
+
+  .cloud-card p {
+    margin-bottom: 2vh;
+    margin-top: 0vh;
+    /* Reduce space below the paragraph */
+    font-size: 2.5vw;
+  }
+
+  .cloud-card img {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    /* Reduce space above the image */
+    width: 10vw;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* ✅ Small phones (iPhones) */
+  .cloud-card {
+    width: 10vw;
+    /* ✅ Make it wider */
+    height: auto;
+    /* ✅ Allow height to adjust naturally */
+
+  }
+
+  .cloud-card h3 {
+    margin-bottom: 0vh;
+    /* Reduce space below the heading */
+    margin-top: 0vh;
+    font-size: 5vw;
+
+
+  }
+
+  .cloud-card p {
+    margin-bottom: 2vh;
+    margin-top: 0vh;
+    /* Reduce space below the paragraph */
+    font-size: 3.5vw;
+  }
+
+  .cloud-card img {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    /* Reduce space above the image */
+    width: 12vw;
+  }
+
+}
+
+
+.cloud-card:hover {
+  filter: brightness(0.8);
+  transform: translateY(-5px);
+}
+
 
 
 
@@ -946,6 +1200,33 @@ html {
   font-size: 1.5vw;
   margin: 0%;
 }
+
+@media (max-width: 1024px) {
+
+  /* ✅ Tablets */
+  .main_p {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* ✅ Large phones */
+  .main_p {
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* ✅ Small phones */
+  .main_p {
+    font-size: 4vw;
+  }
+}
+
+
+
 
 .main_p2 {
   font-size: 25px;
@@ -1329,6 +1610,39 @@ input {
 
 
 }
+
+
+
+@media (max-width: 1024px) {
+
+  /* ✅ Tablets */
+  .thought-btn {
+    padding: 0.9vw 1.5vw;
+    /* Space inside the button */
+    font-size: 1.2vw;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* ✅ Large phones */
+  .thought-btn {
+    padding: 1vh 2vw;
+    /* Space inside the button */
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* ✅ Small phones */
+  .thought-btn {
+    padding: 1.5vw 2.5vw;
+    /* Space inside the button */
+    font-size: 3vw;
+  }
+}
+
 
 .thought-btn:hover {
   background-color: #f0f0f0;
